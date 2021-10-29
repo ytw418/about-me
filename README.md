@@ -1,7 +1,7 @@
 # about-me
 포트폴리오
 
-
+티스토리 블로그 https://ytw418.tistory.com/
 
 올맵 홈페이지
 http://www.allmap.co.kr/
