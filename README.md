@@ -3,7 +3,7 @@
 ## tistory blog
 https://ytw418.tistory.com/
 
-## 개발한 홈페이지 목록
+## 개발한 웹사이트
 
 1. 올맵 홈페이지
 http://www.allmap.co.kr/
