@@ -38,4 +38,5 @@ http://dyer.kr/
 10. 전남서부근로자건강센터
 http://www.jnswhc.or.kr/
 
-
+11. 청주시 60초영화제 랜딩페이지
+ https://6184df609a8e56b29db0a45b--amazing-bardeen-2ee03e.netlify.app/
