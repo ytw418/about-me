@@ -7,23 +7,25 @@
 - 기술스택 
 - react, reactnative , next , typeScript, swr, contextApi
 
+개인 프로젝트
+### 당근마켓 클론코딩
+https://carrot-market-umber.vercel.app/
 
-### - 2022.06 ~ 현재 진행중
+### 생물인의 필수 앱 Breeder - 브리더
+https://reactstagram-13fac.web.app/
+
+
+### - 경력 2022.06 ~ 현재 진행중
 
  - 센슈얼 모먼트에서 웹 프론트엔드 개발자로 재직중
  - 플링 앱을 웹 버전으로 개발중
  - 출판사와 크리에이터가 사용하는 CMS 페이지와 사내 백오피스 개발담당
 
 
-
-### - 2021.04 ~ 2021.11
+### - 경력 2021.04 ~ 2021.11
 
  - 에이전시에서 웹과 하이브리드앱 개발자로 근무한 경력이 있습니다.
  - 퇴사 후 리액트로 이색애완동물 플랫폼서비스 출시(공부)를 목표로 개인프로젝트 진행
-
-### 생물인의 필수 앱 Breeder - 브리더
-https://reactstagram-13fac.web.app/
-
 
 ### tistory blog
 https://ytw418.tistory.com/
