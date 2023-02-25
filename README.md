@@ -7,7 +7,7 @@
 - 기술스택 
 - react, reactnative , next , typeScript, swr, contextApi
 
-개인 프로젝트
+## 개인 프로젝트
 ### 당근마켓 클론코딩
 https://carrot-market-umber.vercel.app/
 
