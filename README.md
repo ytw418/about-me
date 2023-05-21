@@ -7,7 +7,13 @@
 - 기술스택 
 - react, reactnative , next , typeScript, swr, contextApi
 
-## 개인 프로젝트
+## 개인/팀 프로젝트
+
+### 도수리- 도수치료 예약 서비스
+[web](https://www.dosuri.site/)
+[android](https://play.google.com/store/apps/details?id=com.ytw418.dosuriapp)
+
+
 ### 당근마켓 클론코딩
 https://carrot-market-umber.vercel.app/
 
@@ -18,7 +24,7 @@ https://reactstagram-13fac.web.app/
 ### - 경력 2022.06 ~ 현재 진행중
 
  - 센슈얼 모먼트에서 웹 프론트엔드 개발자로 재직중
- - 플링 앱을 웹 버전으로 개발중
+ - 플링 웹 개발 [web](https://app.plingcast.com/)
  - 출판사와 크리에이터가 사용하는 CMS 페이지와 사내 백오피스 개발담당
 
 
