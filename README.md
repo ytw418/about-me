@@ -4,8 +4,12 @@
 - 거주지 : 관악구 신림동
 - 전화번호 : 010-8693-2795
 
-- 기술스택 
-- react, reactnative , next , typeScript, swr, contextApi
+주로 사용하는 기술 스택
+- react, next, TypeScript, restApi, GraphQL, Apollo Client, styled-component, tailwind, swr
+- firebase, vercel, git, ant Design
+
+경험 해본 것
+- prisma, planetscale, axiom, figma, zeplin, swit, express, mongodb, mysql,
 
 ## 개인/팀 프로젝트
 
