@@ -13,16 +13,18 @@
 
 ## 개인/팀 프로젝트
 
-### 도수리- 도수치료 예약 서비스
+### NeoNews - 실시간 K-POP 뉴스 플랫폼(개인)
+[NeoNews v1](https://nextneonews.vercel.app/)
+
+
+### 생물인의 필수 앱 Breeder - 브리더(개인)
+[브리더 v2](https://breeder-web.vercel.app/auth/login)
+
+[브리더 v1](https://reactstagram-13fac.web.app/)
+
+### 도수리- 도수치료 예약 서비스(팀)
 [web](https://www.dosuri.site/)
 [android](https://play.google.com/store/apps/details?id=com.ytw418.dosuriapp)
-
-
-### 당근마켓 클론코딩
-https://carrot-market-umber.vercel.app/
-
-### 생물인의 필수 앱 Breeder - 브리더
-https://reactstagram-13fac.web.app/
 
 
 ### - 경력 2022.06 ~ 현재 진행중
