@@ -27,6 +27,12 @@
 [android](https://play.google.com/store/apps/details?id=com.ytw418.dosuriapp)
 
 
+### - 경력 2023.08 ~ 현재 진행중
+
+ - 핀포인트 FE 개발팀 CTRL.ROOM 개발담당
+ - TAAPSPACE 개발 담당
+  
+
 ### - 경력 2022.06 ~ 현재 진행중
 
  - 센슈얼 모먼트에서 웹 프론트엔드 개발자로 재직중
