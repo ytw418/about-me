@@ -13,14 +13,15 @@
 
 ## 개인/팀 프로젝트
 
+### 생물인의 필수 앱 Breeder - 브리더(개인)
+[브리더 v3](https://bredy.app/)
+
+[브리더 v2](https://breeder-web.vercel.app/auth/login)
+[브리더 v1](https://reactstagram-13fac.web.app/)
+
 ### NeoNews - 실시간 K-POP 뉴스 플랫폼(개인)
 [NeoNews v1](https://nextneonews.vercel.app/)
 
-
-### 생물인의 필수 앱 Breeder - 브리더(개인)
-[브리더 v2](https://breeder-web.vercel.app/auth/login)
-
-[브리더 v1](https://reactstagram-13fac.web.app/)
 
 ### 도수리- 도수치료 예약 서비스(팀)
 [web](https://www.dosuri.site/)
