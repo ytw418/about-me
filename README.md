@@ -4,7 +4,7 @@
 회사에서는 계약 관리 SaaS의 프론트엔드를, 개인으로는 생물 커뮤니티 플랫폼 브리디를 웹과 앱으로 만들고 있습니다.
 
 - 이메일: ytw418@naver.com
-- 이력서: [원티드 CV](https://www.wanted.co.kr/cv/AwwBBwUEAAdFAgICBAIEAUxF)
+- 이력서: [원티드]([https://www.wanted.co.kr/cv/AwwBBwUEAAdFAgICBAIEAUxF](https://social.wanted.co.kr//community/profile/8xuyY3Btrdg33yd7Fbbfkt?utm_source=wanted&utm_medium=share))
 
 ## 하는 일
 
