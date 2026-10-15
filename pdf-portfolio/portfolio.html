@@ -96,6 +96,12 @@
   .p1 table.stack td { padding: 2.6mm 0; }
   .p1 .career-mini { row-gap: 3mm; }
 
+  .themes { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6mm 4mm; }
+  .themes div { display: grid; grid-template-columns: 1fr auto; column-gap: 2mm; align-items: baseline; border-bottom: 1px solid var(--line); padding: 1.2mm 0 1.4mm; }
+  .themes b { font-size: 8.8pt; }
+  .themes span { grid-column: 1; font-size: 7.8pt; color: var(--muted); line-height: 1.4; }
+  .themes em { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-style: normal; font-weight: 800; font-size: 11pt; color: var(--accent); }
+
   /* 2. 브리디 개요 */
   .proj-head { display: flex; justify-content: space-between; align-items: flex-end; }
   .proj-head h2 { font-size: 22pt; font-weight: 800; letter-spacing: -0.04em; }
@@ -214,8 +220,8 @@
     <div class="card">
       <div class="k">01 · LEGAL AI SaaS</div>
       <h4>AI 법률 · 계약 SaaS</h4>
-      <p>AI 법률 에이전트, 전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리 SaaS의 프론트엔드를 만듭니다. AI 계약 앱 Cue FE 리드, 삼성SDS 법무시스템 개발.</p>
-      <div class="num">BHSN 머지 PR 350+</div>
+      <p>AI 법률 에이전트, 전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리 SaaS의 프론트엔드를 만듭니다. Cue 문서 저장소 · 전자서명 · 업로드 리드, 삼성SDS 법무시스템 참여.</p>
+      <div class="num">BHSN 머지 PR 352건 · 2~3쪽</div>
     </div>
     <div class="card">
       <div class="k">02 · WEB + APP</div>
@@ -243,7 +249,7 @@
   <h3 class="blk">경력</h3>
   <div class="career-mini">
     <div class="when">2025.06 ~ 현재</div>
-    <div class="what"><b>BHSN (앨리비)</b><span>Frontend · AI 법률 에이전트, 계약 관리 SaaS, 삼성SDS 법무시스템</span></div>
+    <div class="what"><b>BHSN (앨리비)</b><span>Frontend · AI 법률 에이전트, 계약 관리 SaaS, 삼성SDS 법무시스템 참여</span></div>
     <div class="when">2023.08 ~ 2025.06</div>
     <div class="what"><b>핀포인트</b><span>Frontend · 빌딩 관리 CMS ctrl.room</span></div>
     <div class="when">2022.06 ~ 2023.07</div>
@@ -252,7 +258,142 @@
     <div class="what"><b>올맵</b><span>Web / Hybrid App · 자사 · 외주 웹사이트, 웹뷰 하이브리드 앱</span></div>
   </div>
 
-  <div class="folio"><span>윤성준 · Frontend Engineer</span><span>1 / 6</span></div>
+  <div class="folio"><span>윤성준 · Frontend Engineer</span><span>1 / 8</span></div>
+</section>
+
+<!-- ───────────── 2. 회사 · BHSN ───────────── -->
+<section class="page">
+  <div class="eyebrow">WORK · BHSN · 2025.06 ~ 현재</div>
+  <div class="proj-head">
+    <div>
+      <h2>앨리비 · Cue <small>BHSN</small></h2>
+      <div class="tagline">계약 관리 SaaS와 AI 계약 앱의 프론트엔드</div>
+    </div>
+    <dl class="meta">
+      <dt>제품</dt><dd>앨리비(전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리)</dd>
+      <dt></dt><dd>Cue(AI 계약 앱) · Agent(AI 법률 에이전트)</dd>
+      <dt>역할</dt><dd>Frontend · Cue 문서 저장소 · 전자서명 · 업로드 리드</dd>
+    </dl>
+  </div>
+
+  <table class="stack" style="margin-top:5mm">
+    <tr><td>스택</td><td>SvelteKit 2 · Svelte 4 · TypeScript · Tailwind · Turborepo 모노레포(앱 3개 + 공용 패키지) · tiptap · pdf.js · diff-match-patch · Vitest · Playwright · Sentry · PostHog, Agent는 React 마이크로 프론트엔드를 Svelte 셸이 띄우는 구조</td></tr>
+  </table>
+
+  <div class="stats" style="grid-template-columns: repeat(4, 1fr)">
+    <div class="stat main"><div class="v">352<small>건</small></div><div class="l">머지 PR<br />2025.07 ~ 2026.10</div></div>
+    <div class="stat"><div class="v">162<small>건</small></div><div class="l">가장 바빴던 3개월 PR<br />2026.07 ~ 09 (전체의 46%)</div></div>
+    <div class="stat"><div class="v">400<small>+</small></div><div class="l">커밋 · +44,000줄<br />Cue 213 · 앨리비 177</div></div>
+    <div class="stat"><div class="v">951<small>개</small></div><div class="l">Cue 다국어 키<br />139파일 전면 이전</div></div>
+  </div>
+
+  <h3 class="blk">맡은 영역 (머지 PR 기준)</h3>
+  <div class="themes">
+    <div><b>Cue 제품 개발 · QA</b><span>목록 · 전자서명 · 업로드 · 내비게이션</span><em>~140</em></div>
+    <div><b>결제 · 구독 · 게스트 모드</b><span>프로모션 · 라이선스 · Agent 게스트</span><em>~55</em></div>
+    <div><b>인증 · SSO · 가입</b><span>통합 회원가입 · 가입 전환 측정</span><em>~45</em></div>
+    <div><b>보관함 · 이행관리 · 알림</b><span>체결본 보관 · 템플릿 · 목록</span><em>~40</em></div>
+    <div><b>디자인 시스템 · 공통 UI</b><span>토큰 · 토스트 · LNB</span><em>~19</em></div>
+    <div><b>계약서 비교</b><span>OCR 기반 차이 비교</span><em>18</em></div>
+    <div><b>전자결재 · 법무담당자</b><span>결재 흐름 · 담당자 지정</span><em>~17</em></div>
+    <div><b>AI 법률 에이전트</b><span>게스트 모드 · 질문 횟수 제한 · SSE 한도 처리</span><em>5</em></div>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">W1</span><h4>Cue 문서 저장소와 업로드를 다시 설계하기</h4><div class="tags"><span class="chip">상태 설계</span><span class="chip">목록 · 검색</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>문제</h5>
+        <p class="prob">계약이 체결 전 · 체결 완료 두 단계로 나뉘었는데 두 화면이 같은 폴더 트리를 봐서, 폴더 생성 · 업로드가 엉뚱한 곳에 들어가거나 오류가 났습니다. 검색은 이미 불러온 항목 이름만 걸렀고, 업로드 패널은 새로고침하면 항목이 두 번 보이거나 사라졌습니다.</p>
+        <h5>해결</h5>
+        <ul class="dots">
+          <li>서버 정렬 · 커서 기반 무한 스크롤 · URL 검색어 동기화(300ms 디바운스) 목록을 새로 만들었습니다.</li>
+          <li>폴더 요청 캐시와 업로드 경로 키를 단계별(<code>stage:folderId</code>)로 나눴습니다.</li>
+          <li>검색을 서버 검색 API로 바꾸고 관련도 순서를 유지했습니다. 하이라이트는 <code>{@html}</code> 대신 텍스트 노드로 그려 XSS를 없앴습니다.</li>
+          <li>업로드 패널은 버전을 붙인 sessionStorage 스냅샷으로 복원하고, 워크스페이스를 바꾼 뒤 늦게 온 응답은 버립니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">PR 12건<small>문서 저장소 핵심 흐름 리드</small></div>
+        <ul class="dots"><li>목록 신설 PR +1,729줄 · 18파일</li><li>모든 화면에서 업로드가 실패하던 원인(FormData에 Content-Type 직접 지정)을 요청 대조로 찾아 수정</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="folio"><span>회사 · BHSN 앨리비 · Cue</span><span>2 / 8</span></div>
+</section>
+
+<!-- ───────────── 3. 회사 · 사례 ───────────── -->
+<section class="page">
+  <div class="eyebrow">WORK · CASE STUDIES</div>
+  <h2 class="sec">회사에서 푼 문제</h2>
+
+  <div class="case">
+    <div class="case-head"><span class="n">W2</span><h4>두 제품의 회원가입 · 로그인을 하나로</h4><div class="tags"><span class="chip">인증 · SSO</span><span class="chip">가입 전환</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>문제</h5>
+        <p class="prob">앨리비와 Cue의 가입 · 약관이 따로였고, 가입하고 돌아오면 일회용 토큰이 만료되거나 워크스페이스가 두 번 만들어졌습니다. 구글 SSO 첫 로그인 때는 '생성 중' 화면이 건너뛰어졌습니다.</p>
+        <h5>해결</h5>
+        <ul class="dots">
+          <li>앨리비 가입을 Cue 가입으로 모으고, 가입 응답의 일회용 토큰으로 앨리비에 바로 로그인시켰습니다.</li>
+          <li>약관을 <code>서비스:ID</code> 복합키로 구분해 한 번에 받고, 로그인 뒤 재동의 모달을 없앴습니다.</li>
+          <li>워크스페이스가 반영될 때까지 0.5초 간격 최대 12번 다시 조회해 중복 생성을 막았습니다.</li>
+          <li>SSO 콜백에서 하던 생성을 환영 화면으로 옮겨 로딩 화면을 되살렸습니다.</li>
+          <li>광고 유입 첫 · 마지막 UTM을 가입 API로 보내 가입 전환을 측정하게 했습니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">105파일<small>통합 릴리스 +3,571줄</small></div>
+        <ul class="dots"><li>관련 PR 15건</li><li>배포 일정에 맞춘 한 번의 전환</li><li>가입 퍼널 측정 기반 마련</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">W3</span><h4>계약서 비교 — 삼성SDS 요구 기능을 제품 기능으로</h4><div class="tags"><span class="chip">문서 뷰어</span><span class="chip">diff</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>문제</h5>
+        <p class="prob">초안과 체결본, 형식이 다른 계약서를 비교할 방법이 없었습니다. OCR 분석이 최대 5분까지 걸려 타임아웃이 잦았습니다.</p>
+        <h5>해결</h5>
+        <ul class="dots">
+          <li>기존 OCR 뷰어 위에 비교 뷰와 전체 화면 비교 모달을 올리고 diff-match-patch로 차이를 계산했습니다.</li>
+          <li>처음 복사해 만든 뷰어를 래퍼 구조로 리팩터링했습니다(−458줄).</li>
+          <li>5분 상한에 맞춘 로딩 · 중단 버튼, 공백만 바뀐 변경 표시, 겹치는 변경 태그 자동 오프셋, 닫힌 패널의 태그를 누르면 열고 스크롤하기를 넣었습니다.</li>
+          <li>라이트 버전 제품까지 같은 기능을 넓혔습니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">PR 18건<small>2025.10 ~ 12, 약 7주</small></div>
+        <ul class="dots"><li>첫 PR +1,648줄</li><li>고객 요구로 시작해 코어 제품 기능으로 확장</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="two" style="margin-top:5mm">
+    <div class="mini">
+      <h4>AI 법률 에이전트</h4>
+      <ul class="dots">
+        <li>비로그인 사용자가 써 볼 수 있는 게스트 모드 v1 (+1,078줄 · 26파일)</li>
+        <li>스트리밍(SSE) 응답의 사용 한도 초과 처리</li>
+        <li>대화당 질문 횟수 제한 UI, 세션 이어 붙이기 버그 수정</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4>그 밖에</h4>
+      <ul class="dots">
+        <li>Cue 다국어 키 약 951개 · 139파일 전면 이전</li>
+        <li>디자인 토큰 · 공통 UI, 결제 · 구독 · 프로모션</li>
+        <li>팀에 AI 에이전트 개발 워크플로우(스킬 · 규칙 · 비용 관리) 도입</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="folio"><span>회사 · 사례</span><span>3 / 8</span></div>
 </section>
 
 <!-- ───────────── 2. 브리디 개요 ───────────── -->
@@ -324,7 +465,7 @@
     <div class="tl on"><div class="d">2026.10.14</div><div class="t">web-v1.21.1 (29번째)</div></div>
   </div>
 
-  <div class="folio"><span>브리디 · 개요</span><span>2 / 6</span></div>
+  <div class="folio"><span>브리디 · 개요</span><span>4 / 8</span></div>
 </section>
 
 <!-- ───────────── 3. 화면 · 기능 ───────────── -->
@@ -357,7 +498,7 @@
     <div class="feat"><b>운영 · 계정</b><span>관리자 페이지, 숨김 · 기간 정지 · 경고 제재와 이력, 카카오 · 구글 · 애플 로그인</span></div>
   </div>
 
-  <div class="folio"><span>브리디 · 화면과 기능</span><span>3 / 6</span></div>
+  <div class="folio"><span>브리디 · 화면과 기능</span><span>5 / 8</span></div>
 </section>
 
 <!-- ───────────── 4. 사례 1~3 ───────────── -->
@@ -430,7 +571,7 @@
     </div>
   </div>
 
-  <div class="folio"><span>브리디 · 사례 1~3</span><span>4 / 6</span></div>
+  <div class="folio"><span>브리디 · 사례 1~3</span><span>6 / 8</span></div>
 </section>
 
 <!-- ───────────── 5. 사례 4~6 ───────────── -->
@@ -501,7 +642,7 @@
     </div>
   </div>
 
-  <div class="folio"><span>브리디 · 사례 4~6</span><span>5 / 6</span></div>
+  <div class="folio"><span>브리디 · 사례 4~6</span><span>7 / 8</span></div>
 </section>
 
 <!-- ───────────── 6. 운영 · 경력 ───────────── -->
@@ -533,7 +674,7 @@
   <h3 class="blk">경력</h3>
   <div class="job">
     <div><div class="co">BHSN (앨리비)</div><div class="when">2025.06 ~ 현재 · Frontend</div></div>
-    <div class="desc"><b>AI 법률 에이전트</b>와 전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리를 하는 계약 관리 SaaS의 프론트엔드. 신규 AI 계약 앱 <b>Cue</b>의 목록 · 상세 · 전자서명 · 업로드 영역 FE 리드, <b>삼성SDS 법무시스템</b> 개발, 통합 회원가입 · SSO · 결제, CLM 계약서 비교 · 전자결재. <b>머지 PR 350+.</b> AI 에이전트 개발 워크플로우(스킬 · 규칙 · 비용 관리)를 팀에 도입.</div>
+    <div class="desc"><b>AI 법률 에이전트</b>와 전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리를 하는 계약 관리 SaaS의 프론트엔드. 신규 AI 계약 앱 <b>Cue</b>의 목록 · 상세 · 전자서명 · 업로드 영역 FE 리드, <b>삼성SDS 법무시스템</b> 참여(계약서 비교 · 전자결재), 통합 회원가입 · SSO · 결제. <b>머지 PR 352건</b>(자세한 내용은 2~3쪽). AI 에이전트 개발 워크플로우(스킬 · 규칙 · 비용 관리)를 팀에 도입.</div>
   </div>
   <div class="job">
     <div><div class="co">핀포인트</div><div class="when">2023.08 ~ 2025.06 · Frontend</div></div>
@@ -566,7 +707,7 @@
     <div class="ds">도수치료 예약 서비스 (팀) · <a href="https://play.google.com/store/apps/details?id=com.ytw418.dosuriapp" style="border-bottom:1px solid #c3c7cd">Android 앱</a></div>
   </div>
 
-  <div class="folio"><span>ytw418@naver.com · github.com/ytw418</span><span>6 / 6</span></div>
+  <div class="folio"><span>ytw418@naver.com · github.com/ytw418</span><span>8 / 8</span></div>
 </section>
 
 </body>
