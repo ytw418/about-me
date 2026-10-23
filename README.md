@@ -20,7 +20,6 @@ AI 모델을 만드는 게 아니라, 이미 있는 모델(Claude · Codex · Ge
 | ⏰ 매일 도는 에이전트 일정 | **19개** (Paseo 스케줄, Claude · Codex 혼용, 새벽 2시 ~ 자정) |
 | 🧰 직접 만든 스킬 | **79개** ([ytw418-agent-skills](https://github.com/ytw418/ytw418-agent-skills)) — 배포 · PR 완주 · 콘텐츠 · 영업 · 브리핑 |
 | 🛡️ 에이전트 가드레일 훅 | DB 파괴 명령 차단 · 승인 없는 메시지 전송 차단 · 질문당 사용량 예산 · 보고 언어 강제 (테스트 포함) |
-| 📈 개인 스레드 | [@lcaros_rn](https://www.threads.com/@lcaros_rn) — 매일 자동 게시로 운영, 최근 30일 조회 약 7만 |
 
 ### 에이전트가 매일 하는 일
 
