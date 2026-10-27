@@ -5,6 +5,8 @@
 회사에서는 AI 계약 관리 서비스(앨리비)의 프론트엔드를 만들고,
 퇴근 후에는 생물 커뮤니티 브리디와 K-컬처 미디어 언니노트를 혼자 만들고 운영합니다.
 
+📄 [포트폴리오 PDF 보기](pdf-portfolio/%EC%9C%A4%EC%84%B1%EC%A4%80_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf) · [다운로드](https://github.com/ytw418/about-me/raw/main/pdf-portfolio/%EC%9C%A4%EC%84%B1%EC%A4%80_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf)
+
 ytw418@naver.com · [원티드 이력서](https://social.wanted.co.kr//community/profile/8xuyY3Btrdg33yd7Fbbfkt?utm_source=wanted&utm_medium=share)
 
 ## 혼자서 팀처럼 일하는 방법
@@ -15,7 +17,7 @@ ytw418@naver.com · [원티드 이력서](https://social.wanted.co.kr//community
 - 웹 CI/CD, 앱 코드푸시, 앱스토어·플레이스토어 제출까지 명령 하나로 처리
 - 마케팅 지표 브리핑이 매일 아침 슬랙으로 옵니다. 에이전트가 PostHog에서 어제와 지난 7일을 비교해 유입 채널, 이탈, 퍼널이 끊기는 곳, 오늘 할 일 두세 개를 정리합니다. 그걸 보고 고치고, 다음 날 브리핑에서 다시 확인합니다
 - SEO와 AEO(AI 검색 노출)까지 직접 작업
-- 그 결과 출시 7일 동안 트래픽이 매일 두 배씩 늘었습니다
+- 그 결과 웹 하루 방문자가 11명(10월 6일)에서 닷새 만에 115명(10월 11일)이 됐습니다
 - 9월 30일부터 2주 동안 웹 커밋 300개, 앱 커밋 230개를 넘겼습니다. 거의 다 에이전트와 같이 한 것입니다
 
 만든 스킬은 [ytw418-agent-skills](https://github.com/ytw418/ytw418-agent-skills)에 모아 두었습니다.

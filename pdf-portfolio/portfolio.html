@@ -197,119 +197,144 @@
   .proj-row .nm { font-weight: 800; }
   .proj-row .nm a { border-bottom: 1px solid #c3c7cd; }
   .proj-row .ds { color: var(--sub); }
+  .wide-shot { width: 100%; display: block; border: 1px solid var(--line); border-radius: 3mm; margin-top: 4mm; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5mm; margin-top: 5mm; }
+  .grid2 .mini h4 { display: flex; align-items: baseline; gap: 2mm; }
+  .grid2 .mini h4 .n { color: var(--accent); font-size: 9pt; }
+  .p1 .proj-row { padding: 2.2mm 0; }
+  .p1 .proj-row .ds b { color: var(--text); }
+  .p1 .hero { padding-bottom: 4mm; }
+  .p1 .intro { margin-top: 5mm !important; }
+  .p1 .cards3 { margin-top: 5mm !important; }
+  .p1 h3.blk { margin-top: 5.5mm !important; margin-bottom: 1.5mm !important; }
+  .p1 table.stack td { padding: 1.3mm 0 !important; }
+  .p1 .proj-row { padding: 1.2mm 0 !important; }
+  .unnie-top { display: grid; grid-template-columns: auto 1fr; gap: 4mm; margin-top: 4mm; align-items: stretch; }
+  .unnie-top .wide-shot { height: 80mm; width: auto; margin-top: 0; }
+  .unnie-top .stats { grid-template-columns: 1fr 1fr; margin-top: 0; grid-auto-rows: 1fr; }
+  .sched { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm 4mm; margin-top: 2mm; }
+  .sched div { border-bottom: 1px solid var(--line); padding: 1.4mm 0; font-size: 8.4pt; }
+  .sched b { color: var(--accent); margin-right: 1.5mm; }
+  .road { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 2mm; }
+  .road > div { border: 1px solid var(--line); border-radius: 2.5mm; padding: 3.5mm 3.5mm 3mm; position: relative; }
+  .road > div.on { border-color: #f9c39c; background: var(--accent-soft); }
+  .road .s { font-size: 7.6pt; font-weight: 800; color: var(--accent); letter-spacing: 0.06em; }
+  .road b { display: block; font-size: 10pt; margin: 0.8mm 0 1.2mm; }
+  .road span { font-size: 8.2pt; color: var(--sub); line-height: 1.5; display: block; }
+  .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm 6mm; margin-top: 2mm; }
+  .principles div { border-left: 3px solid var(--accent); padding: 0.5mm 0 0.5mm 3mm; }
+  .principles b { display: block; font-size: 9.4pt; }
+  .principles span { font-size: 8.4pt; color: var(--sub); }
+  .pg { color: var(--muted); font-weight: 600; font-size: 7.8pt; margin-left: 1.5mm; }
 </style>
 </head>
 <body>
 
-<!-- ───────────── 1. 프로필 ───────────── -->
 <section class="page p1">
   <div class="hero">
     <div>
       <div class="eyebrow">PORTFOLIO · 2026</div>
       <h1 style="margin-top:2mm">윤성준</h1>
-      <div class="role">프론트엔드 개발자 · Frontend Engineer</div>
+      <div class="role">프론트엔드 개발자 · 경력 5년 · Frontend Engineer</div>
     </div>
     <div class="contact">
       <a href="mailto:ytw418@naver.com">ytw418@naver.com</a><br />
       <a href="https://github.com/ytw418">github.com/ytw418</a><br />
-      <a href="https://bredy.app/">bredy.app</a><br />
+      <a href="https://bredy.app/">bredy.app</a> · <a href="https://unnienote.app">unnienote.app</a><br />
       <a href="https://social.wanted.co.kr//community/profile/8xuyY3Btrdg33yd7Fbbfkt?utm_source=wanted&amp;utm_medium=share">원티드 프로필</a>
     </div>
   </div>
 
   <p class="intro">
-    <span class="hl">프론트엔드 개발자입니다.</span> 회사에서는 <b>AI 법률 에이전트</b>와
-    전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리를 하는 <b>계약 관리 SaaS 앨리비</b>의 프론트엔드를 만들고,
-    개인으로는 생물 커뮤니티 플랫폼 <b>브리디</b>를 기획부터 웹 · 앱 · 마케팅까지 혼자 만들어 운영합니다.
+    <span class="hl">프론트엔드 개발자 윤성준입니다.</span> 낮에는 BHSN에서 <b>AI 법률 에이전트</b>와 <b>AI 계약 앱 Cue</b> 화면을 만들고,
+    밤에는 생물 커뮤니티 <b>브리디</b>와 K-컬처 미디어 <b>언니노트</b>를 혼자 만듭니다. 시장 조사부터 서버, 앱, 마케팅까지 전부 제 몫입니다.
   </p>
   <p class="intro-sub">
-    화면만 만들고 끝내지 않습니다. 배포 · 측정 · 운영 규칙까지 코드로 만들어 두고, 그 위에서 빠르게 내보냅니다.
-    브리디 웹은 릴리스 버전을 매기기 시작한 뒤 9일 동안 29번 운영에 배포했습니다.
+    혼자 다 하려니 손이 모자라서 반복되는 일은 AI 에이전트한테 넘겼습니다. 제일 아끼는 건 아침 지표 브리핑입니다.
+    PostHog 숫자로 가설을 세워 기획자 · 디자이너에게 넘기는 일을 회사에서도, 제 서비스에서도 매일 합니다.
   </p>
 
   <div class="cards3">
     <div class="card">
-      <div class="k">01 · LEGAL AI SaaS</div>
-      <h4>AI 법률 · 계약 SaaS</h4>
-      <p>AI 법률 에이전트, 전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리 SaaS의 프론트엔드를 만듭니다. Cue 문서 저장소 · 전자서명 · 업로드 리드, 삼성SDS 법무시스템 참여.</p>
-      <div class="num">BHSN 머지 PR 352건 · 2~3쪽</div>
+      <div class="k">01 · LEGAL AI</div>
+      <h4>AI 에이전트 화면</h4>
+      <p>Svelte로 된 Cue 안에 React로 만든 에이전트 화면을 띄웁니다. 개인 프로젝트에서 다듬은 지표 브리핑과 에이전트 개발 방식을 팀에도 들여왔습니다.</p>
+      <div class="num">고객 요구를 제품 기능으로 · 두 제품 가입 통합</div>
     </div>
     <div class="card">
-      <div class="k">02 · WEB + APP</div>
-      <h4>혼자서 웹 · 앱 출시</h4>
-      <p>브리디를 기획부터 Next.js 웹, Expo 앱, 스토어 제출까지 혼자 만듭니다. 한쪽만 바뀌면 커밋을 막는 훅으로 웹과 앱을 맞춥니다.</p>
-      <div class="num">9일 동안 운영 배포 29번 · 웹·앱 경로 일치 100%</div>
+      <div class="k">02 · FULL-STACK</div>
+      <h4>웹 · 서버 · 앱을 혼자</h4>
+      <p>Next.js로 웹과 API를 짜고 Expo로 앱을 만들어 스토어에 올렸습니다. 언니노트는 웹을 그대로 쓰는 웹뷰 앱입니다. 웹만 고치고 앱을 빼먹으면 커밋이 안 되게 막아 뒀습니다.</p>
+      <div class="num">앱 2개 스토어 출시 · 웹 운영 배포 74번</div>
     </div>
     <div class="card">
-      <div class="k">03 · AI WORKFLOW</div>
-      <h4>AI 에이전트와 안전하게</h4>
-      <p>Claude Code 스킬을 직접 만들어 쓰고, 에이전트가 지켜야 할 규칙은 문서가 아니라 훅과 CI로 강제합니다. 이 방식을 회사 팀에도 도입했습니다.</p>
-      <div class="num">자작 스킬 50+ · 훅 · CI 가드레일</div>
+      <div class="k">03 · AI AGENT OPS</div>
+      <h4>혼자서 팀처럼</h4>
+      <p>배포, 스토어 제출, 인스타·카페 게시, 아침 지표 브리핑까지 에이전트가 합니다. 대신 사고 치지 않게 토큰 예산이랑 배포 권한은 훅으로 묶어 뒀습니다.</p>
+      <div class="num">매일 19개 일정 · 자작 스킬 50+</div>
     </div>
   </div>
+
+  <h3 class="blk">프로젝트</h3>
+  <div class="proj-row"><div class="nm">Cue · 에이전트<span class="pg">2~3쪽</span></div><div class="ds"><b>BHSN · 2025.06 ~</b> AI 법률 에이전트(Drag &amp; Ask · 모바일), Cue 문서 저장소, 통합 가입 · SSO, 계약서 비교</div></div>
+  <div class="proj-row"><div class="nm"><a href="https://bredy.app/">브리디</a><span class="pg">4~7쪽</span></div><div class="ds"><b>개인 · 1인</b> 곤충 · 파충류 · 물고기 커뮤니티. Next.js 웹 + Expo 앱 풀스택, CI/CD, 테스트, 2026.10 스토어 출시</div></div>
+  <div class="proj-row"><div class="nm"><a href="https://unnienote.app">언니노트</a><span class="pg">8쪽</span></div><div class="ds"><b>개인 · 1인</b> 9개 언어 K-컬처 미디어. 자동 콘텐츠 파이프라인, React Native 웹뷰 앱과 웹 ↔ 앱 브리지</div></div>
+  <div class="proj-row"><div class="nm">제품 · BM · 지표<span class="pg">9~11쪽</span></div><div class="ds">경쟁사를 뜯어보고 매출을 세 갈래로 계산한 기록, 안 만들기로 한 것들, 매일 아침 지표로 가설 세우기</div></div>
+  <div class="proj-row"><div class="nm"><a href="https://github.com/ytw418/ytw418-agent-skills">에이전트 운영</a><span class="pg">12쪽</span></div><div class="ds">토큰 절약, 자동화 전용 브라우저, 인스타 · 스레드 · 카페 자동화, 훅으로 박은 규칙</div></div>
+  <div class="proj-row"><div class="nm"><a href="https://app.plingcast.com">플링</a><span class="pg">13쪽</span></div><div class="ds"><b>센슈얼모먼트 · 2022.06 ~ 2023.07</b> 오디오 · 웹소설 다국어 웹앱, CMS · 백오피스, Next.js 이슈 리포트</div></div>
 
   <h3 class="blk">기술 스택</h3>
   <table class="stack">
-    <tr><td>Frontend</td><td>React, Next.js(App Router), SvelteKit, TypeScript, Tailwind CSS, react-query, SWR, Recoil</td></tr>
-    <tr><td>Backend</td><td>Next.js API Routes, Prisma, PostgreSQL(Supabase), iron-session · JWT, Vercel Serverless</td></tr>
-    <tr><td>Mobile</td><td>React Native(Expo SDK 56), Expo Router, NativeWind, EAS Build, FCM, Google Play Developer API</td></tr>
-    <tr><td>품질 · 운영</td><td>Jest, Vitest, Playwright E2E, GitHub Actions, Sentry, PostHog, Cloudflare Images</td></tr>
-    <tr><td>AI 워크플로우</td><td>Claude Code, Codex, 스킬 · 훅 · 서브에이전트 설계, 토큰 사용량 측정 · 절감 도구</td></tr>
+    <tr><td>Frontend</td><td>React, Next.js(App Router), SvelteKit, TypeScript, Tailwind CSS, react-query, SWR, next-intl</td></tr>
+    <tr><td>Backend</td><td>Next.js API Routes, Prisma, PostgreSQL(Supabase), iron-session · JWT, GraphQL</td></tr>
+    <tr><td>Mobile</td><td>React Native(Expo), Expo Router, react-native-webview 브리지, FCM, AdMob</td></tr>
+    <tr><td>CI/CD · 품질</td><td>GitHub Actions, Vercel, EAS Build · Update(코드푸시), Play · App Store Connect API, Jest, Vitest, Playwright, Sentry, PostHog</td></tr>
   </table>
 
-  <h3 class="blk">경력</h3>
-  <div class="career-mini">
-    <div class="when">2025.06 ~ 현재</div>
-    <div class="what"><b>BHSN (앨리비)</b><span>Frontend · AI 법률 에이전트, 계약 관리 SaaS, 삼성SDS 법무시스템 참여</span></div>
-    <div class="when">2023.08 ~ 2025.06</div>
-    <div class="what"><b>핀포인트</b><span>Frontend · 빌딩 관리 CMS ctrl.room</span></div>
-    <div class="when">2022.06 ~ 2023.07</div>
-    <div class="what"><b>센슈얼모먼트</b><span>Frontend · 오디오 · 웹소설 플랫폼 플링</span></div>
-    <div class="when">2021.04 ~ 2021.11</div>
-    <div class="what"><b>올맵</b><span>Web / Hybrid App · 자사 · 외주 웹사이트, 웹뷰 하이브리드 앱</span></div>
-  </div>
-
-  <div class="folio"><span>윤성준 · Frontend Engineer</span><span>1 / 8</span></div>
+  <div class="folio"><span>윤성준 · Frontend Engineer</span><span>1 / 13</span></div>
 </section>
 
-<!-- ───────────── 2. 회사 · BHSN ───────────── -->
 <section class="page pw2">
   <div class="eyebrow">WORK · BHSN · 2025.06 ~ 현재</div>
   <div class="proj-head">
     <div>
-      <h2>앨리비 · Cue <small>BHSN</small></h2>
-      <div class="tagline">계약 관리 SaaS와 AI 계약 앱의 프론트엔드</div>
+      <h2>Cue · 앨리비 에이전트 <small>BHSN</small></h2>
+      <div class="tagline">AI 계약 앱과 AI 법률 에이전트의 프론트엔드</div>
     </div>
     <dl class="meta">
-      <dt>제품</dt><dd>앨리비(전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리)</dd>
-      <dt></dt><dd>Cue(AI 계약 앱) · Agent(AI 법률 에이전트)</dd>
-      <dt>역할</dt><dd>Frontend · Cue 문서 저장소 · 전자서명 · 업로드 리드</dd>
+      <dt>제품</dt><dd>Cue(AI 계약 앱) · Agent(AI 법률 에이전트)</dd>
+      <dt></dt><dd>앨리비(계약 검토 · 작성 · 전자서명 · 이행관리 SaaS)</dd>
+      <dt>스택</dt><dd>SvelteKit · TypeScript · Turborepo, 에이전트는 React MFE</dd>
     </dl>
   </div>
 
-  <table class="stack" style="margin-top:5mm">
-    <tr><td>스택</td><td>SvelteKit 2 · Svelte 4 · TypeScript · Tailwind · Turborepo 모노레포(앱 3개 + 공용 패키지) · tiptap · pdf.js · diff-match-patch · Vitest · Playwright · Sentry · PostHog, Agent는 React 마이크로 프론트엔드를 Svelte 셸이 띄우는 구조</td></tr>
-  </table>
-
-  <div class="stats" style="grid-template-columns: repeat(4, 1fr)">
-    <div class="stat main"><div class="v">352<small>건</small></div><div class="l">머지 PR<br />2025.07 ~ 2026.10</div></div>
-    <div class="stat"><div class="v">162<small>건</small></div><div class="l">가장 바빴던 3개월 PR<br />2026.07 ~ 09 (전체의 46%)</div></div>
-    <div class="stat"><div class="v">400<small>+</small></div><div class="l">커밋 · +44,000줄<br />Cue 213 · 앨리비 177</div></div>
+  <div class="stats" style="grid-template-columns: repeat(4, 1fr); margin-top:5mm">
+    <div class="stat main"><div class="v">105<small>파일</small></div><div class="l">앨리비 · Cue 가입 통합<br />한 번에 넘긴 릴리스</div></div>
+    <div class="stat"><div class="v">7<small>주</small></div><div class="l">계약서 비교<br />고객 요구 → 코어 기능</div></div>
+    <div class="stat"><div class="v">10,000<small>자</small></div><div class="l">에이전트 입력 한도<br />첨부는 대화당 10개</div></div>
     <div class="stat"><div class="v">951<small>개</small></div><div class="l">Cue 다국어 키<br />139파일 전면 이전</div></div>
   </div>
+  <p style="font-size:7.8pt; color:var(--muted); margin-top:1.5mm">2025.07부터 머지한 PR 352건 · 커밋 400+</p>
 
-  <h3 class="blk">맡은 영역 (머지 PR 기준)</h3>
-  <div class="themes">
-    <div><b>Cue 제품 개발 · QA</b><span>목록 · 전자서명 · 업로드 · 내비게이션</span><em>~140</em></div>
-    <div><b>결제 · 구독 · 게스트 모드</b><span>프로모션 · 라이선스 · Agent 게스트</span><em>~55</em></div>
-    <div><b>인증 · SSO · 가입</b><span>통합 회원가입 · 가입 전환 측정</span><em>~45</em></div>
-    <div><b>보관함 · 이행관리 · 알림</b><span>체결본 보관 · 템플릿 · 목록</span><em>~40</em></div>
-    <div><b>디자인 시스템 · 공통 UI</b><span>토큰 · 토스트 · LNB</span><em>~19</em></div>
-    <div><b>계약서 비교</b><span>OCR 기반 차이 비교</span><em>18</em></div>
-    <div><b>전자결재 · 법무담당자</b><span>결재 흐름 · 담당자 지정</span><em>~17</em></div>
-    <div><b>AI 법률 에이전트</b><span>게스트 모드 · 질문 횟수 제한 · SSE 한도 처리</span><em>5</em></div>
+  <div class="case">
+    <div class="case-head"><span class="n">W0</span><h4>AI 법률 에이전트 화면</h4><div class="tags"><span class="chip">React MFE</span><span class="chip">모바일</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>만든 것</h5>
+        <ul class="dots">
+          <li><b>Drag &amp; Ask</b>: 계약서를 읽다 문장을 드래그하면 '물어보기' 버튼이 뜨고, 고른 문장은 서버와 맞춘 인용 형식으로 입력창에 붙어 에이전트가 어느 문장을 묻는지 정확히 압니다.</li>
+          <li>계약서 전문을 통째로 붙이는 사람이 많아 긴 텍스트는 칩으로 접고, 입력 한도 10,000자 · 첨부 대화당 10개로 늘렸습니다. 처음 온 사람에게는 바로 시작하는 워크플로우를 보여 줍니다.</li>
+          <li>휴대폰용으로 대화 · 이전 내역 · 캔버스 · 출처 미리보기를 다시 짰습니다. 바텀시트는 손가락을 따라오고 내용 영역을 끌어도 닫히며, CDP로 실제 터치를 보내는 e2e 테스트로 확인합니다.</li>
+          <li>그 전에는 비로그인 게스트 모드 v1, 스트리밍(SSE) 응답의 한도 초과 처리, 대화당 질문 횟수 제한을 맡았습니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>구조</h5>
+        <div class="big">Svelte 안 React<small>Cue 셸이 에이전트 MFE를 띄움</small></div>
+        <ul class="dots"><li>게스트 모드 +1,078줄 · 26파일</li><li>바텀시트 제스처는 실제 터치 e2e로 회귀 확인</li></ul>
+      </div>
+    </div>
   </div>
-
   <div class="case">
     <div class="case-head"><span class="n">W1</span><h4>Cue 문서 저장소와 업로드를 다시 설계하기</h4><div class="tags"><span class="chip">상태 설계</span><span class="chip">목록 · 검색</span></div></div>
     <div class="case-body">
@@ -326,20 +351,18 @@
       </div>
       <div class="result">
         <h5>결과</h5>
-        <div class="big">PR 12건<small>문서 저장소 핵심 흐름 리드</small></div>
+        <div class="big">목록 · 검색 · 업로드<small>문서 저장소 흐름을 맡아 다시 짬</small></div>
         <ul class="dots"><li>목록 신설 PR +1,729줄 · 18파일</li><li>모든 화면에서 업로드가 실패하던 원인(FormData에 Content-Type 직접 지정)을 요청 대조로 찾아 수정</li></ul>
       </div>
     </div>
   </div>
 
-  <div class="folio"><span>회사 · BHSN 앨리비 · Cue</span><span>2 / 8</span></div>
+  <div class="folio"><span>회사 · BHSN Cue · 에이전트</span><span>2 / 13</span></div>
 </section>
 
-<!-- ───────────── 3. 회사 · 사례 ───────────── -->
 <section class="page pw3">
-  <div class="eyebrow">WORK · CASE STUDIES</div>
+  <div class="eyebrow">WORK · BHSN · CASE STUDIES</div>
   <h2 class="sec">회사에서 푼 문제</h2>
-
   <div class="case">
     <div class="case-head"><span class="n">W2</span><h4>두 제품의 회원가입 · 로그인을 하나로</h4><div class="tags"><span class="chip">인증 · SSO</span><span class="chip">가입 전환</span></div></div>
     <div class="case-body">
@@ -364,7 +387,7 @@
   </div>
 
   <div class="case">
-    <div class="case-head"><span class="n">W3</span><h4>계약서 비교 — 삼성SDS 요구 기능을 제품 기능으로</h4><div class="tags"><span class="chip">문서 뷰어</span><span class="chip">diff</span></div></div>
+    <div class="case-head"><span class="n">W3</span><h4>고객 한 곳의 요구가 제품 기능이 된 계약서 비교</h4><div class="tags"><span class="chip">문서 뷰어</span><span class="chip">diff</span></div></div>
     <div class="case-body">
       <div>
         <h5>문제</h5>
@@ -379,35 +402,24 @@
       </div>
       <div class="result">
         <h5>결과</h5>
-        <div class="big">PR 18건<small>2025.10 ~ 12, 약 7주</small></div>
-        <ul class="dots"><li>첫 PR +1,648줄</li><li>고객 요구로 시작해 코어 제품 기능으로 확장</li></ul>
+        <div class="big">−458줄<small>복사로 빨리 내고, 감싸는 구조로 정리</small></div>
+        <ul class="dots"><li>2025.10 ~ 12, 약 7주</li><li>고객 한 곳의 요구로 시작해 코어 제품 기능으로 확장</li></ul>
       </div>
     </div>
   </div>
 
-  <div class="two" style="margin-top:5mm">
-    <div class="mini">
-      <h4>AI 법률 에이전트</h4>
-      <ul class="dots">
-        <li>비로그인 사용자가 써 볼 수 있는 게스트 모드 v1 (+1,078줄 · 26파일)</li>
-        <li>스트리밍(SSE) 응답의 사용 한도 초과 처리</li>
-        <li>대화당 질문 횟수 제한 UI, 세션 이어 붙이기 버그 수정</li>
-      </ul>
-    </div>
-    <div class="mini">
-      <h4>그 밖에</h4>
-      <ul class="dots">
-        <li>Cue 다국어 키 약 951개 · 139파일 전면 이전</li>
-        <li>디자인 토큰 · 공통 UI, 결제 · 구독 · 프로모션</li>
-        <li>팀에 AI 에이전트 개발 워크플로우(스킬 · 규칙 · 비용 관리) 도입</li>
-      </ul>
-    </div>
+  <div class="mini" style="margin-top:5mm">
+    <h4>그 밖에</h4>
+    <ul class="dots">
+      <li>Cue 퍼널: 작성 · 검토 · 전자서명 · 체결 단계마다 다음 단계로 이끄는 모달, 단계별 성공 · 노출을 PostHog 이벤트로 측정</li>
+      <li>Cue 다국어 키 951개 · 139파일 이전, 디자인 토큰 · 공통 UI, 결제 · 구독 · 프로모션</li>
+      <li>팀 AX: 기획서 · 피그마에서 빠진 요구사항을 찾아 담당자별 질문지를 만드는 킥오프 대시보드, Jira 스킬, 매일 아침 PostHog 지표 · 팀 일정 브리핑</li>
+    </ul>
   </div>
 
-  <div class="folio"><span>회사 · 사례</span><span>3 / 8</span></div>
+  <div class="folio"><span>회사 · BHSN 사례</span><span>3 / 13</span></div>
 </section>
 
-<!-- ───────────── 2. 브리디 개요 ───────────── -->
 <section class="page">
   <div class="eyebrow">PERSONAL PROJECT · 1인 개발</div>
   <div class="proj-head">
@@ -418,7 +430,7 @@
     <dl class="meta">
       <dt>기간</dt><dd>2023.07 ~ 현재 (앱 2026.06 ~)</dd>
       <dt>역할</dt><dd>기획 · 디자인 · 웹 · 서버 · 앱 · 운영 · 마케팅 100%</dd>
-      <dt>상태</dt><dd>웹 운영 중 · Google Play 비공개 테스트 · App Store 심사 중</dd>
+      <dt>상태</dt><dd>웹 운영 중 · 2026.10.20 App Store · Google Play 출시</dd>
     </dl>
   </div>
 
@@ -426,6 +438,8 @@
 
   <div class="links">
     <a href="https://bredy.app/"><i style="background:#f26b10"></i>bredy.app</a>
+    <a href="https://apps.apple.com/kr/app/id6822154153"><i style="background:#111"></i>App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=app.bredy.mobile"><i style="background:#01875f"></i>Google Play</a>
     <a href="https://www.instagram.com/bredy_breeder/"><i style="background:#e4405f"></i>Instagram @bredy_breeder</a>
     <a href="https://www.threads.com/@bredy_breeder"><i style="background:#111"></i>Threads @bredy_breeder</a>
     <a href="https://blog.naver.com/bredy_team"><i style="background:#03c75a"></i>Naver Blog</a>
@@ -438,11 +452,11 @@
   </p>
 
   <div class="stats">
-    <div class="stat main"><div class="v">29<small>번</small></div><div class="l">9일 동안 운영 배포<br />v1.0.0(10.06) → v1.21.1</div></div>
-    <div class="stat"><div class="v">457<small>명</small></div><div class="l">최근 30일 웹 방문자<br />PostHog · 10.15 기준</div></div>
-    <div class="stat"><div class="v">1,000<small>+</small></div><div class="l">웹 · 앱 커밋<br />웹 750+ · 앱 270+</div></div>
-    <div class="stat"><div class="v">197<small>개</small></div><div class="l">웹 테스트 파일<br />Jest + Playwright E2E</div></div>
-    <div class="stat"><div class="v">17<small>개</small></div><div class="l">수용 기준 있는 PRD<br />HTML 시안 17세트</div></div>
+    <div class="stat main"><div class="v">74<small>번</small></div><div class="l">20일 동안 웹 운영 배포<br />v1.0.0(10.06) → v1.48.0(10.25)</div></div>
+    <div class="stat"><div class="v">100<small>자리</small></div><div class="l">창립 브리더 모집<br />출시 전 10.16 마감</div></div>
+    <div class="stat"><div class="v">1,500<small>+</small></div><div class="l">웹 · 앱 커밋<br />웹 1,100+ · 앱 480</div></div>
+    <div class="stat"><div class="v">220<small>+</small></div><div class="l">웹 · 앱 테스트 파일<br />Jest · Playwright E2E</div></div>
+    <div class="stat"><div class="v">29<small>개</small></div><div class="l">수용 기준 있는 PRD<br />HTML 시안 29세트</div></div>
   </div>
 
   <h3 class="blk">구조</h3>
@@ -472,14 +486,13 @@
     <div class="tl"><div class="d">2026.06</div><div class="t">Expo 앱 시작</div></div>
     <div class="tl"><div class="d">2026.09.30</div><div class="t">당근 톤 리디자인</div></div>
     <div class="tl on"><div class="d">2026.10.06</div><div class="t">릴리스 태그 v1.0.0</div></div>
-    <div class="tl on"><div class="d">2026.10.13</div><div class="t">iOS 심사 제출</div></div>
-    <div class="tl on"><div class="d">2026.10.14</div><div class="t">web-v1.21.1 (29번째)</div></div>
+    <div class="tl on"><div class="d">2026.10.16</div><div class="t">창립 브리더 100자리 마감</div></div>
+    <div class="tl on"><div class="d">2026.10.20</div><div class="t">App Store · Google Play 출시</div></div>
   </div>
 
-  <div class="folio"><span>브리디 · 개요</span><span>4 / 8</span></div>
+  <div class="folio"><span>브리디 · 개요</span><span>4 / 13</span></div>
 </section>
 
-<!-- ───────────── 3. 화면 · 기능 ───────────── -->
 <section class="page">
   <div class="eyebrow">BREDY · SCREENS</div>
   <h2 class="sec">같은 화면을 앱과 웹으로</h2>
@@ -509,14 +522,12 @@
     <div class="feat"><b>운영 · 계정</b><span>관리자 페이지, 숨김 · 기간 정지 · 경고 제재와 이력, 카카오 · 구글 · 애플 로그인</span></div>
   </div>
 
-  <div class="folio"><span>브리디 · 화면과 기능</span><span>5 / 8</span></div>
+  <div class="folio"><span>브리디 · 화면과 기능</span><span>5 / 13</span></div>
 </section>
 
-<!-- ───────────── 4. 사례 1~3 ───────────── -->
 <section class="page">
-  <div class="eyebrow">BREDY · CASE STUDIES</div>
-  <h2 class="sec">문제를 어떻게 풀었나 (1)</h2>
-
+  <div class="eyebrow">BREDY · FULL-STACK · CI/CD · TEST</div>
+  <h2 class="sec">웹이랑 앱을 혼자서 같이 굴리기</h2>
   <div class="case">
     <div class="case-head"><span class="n">01</span><h4>혼자서 웹과 앱이 어긋나지 않게 만들기</h4><div class="tags"><span class="chip">아키텍처</span><span class="chip">개발 프로세스</span></div></div>
     <div class="case-body">
@@ -560,6 +571,32 @@
     </div>
   </div>
 
+  <div class="two" style="margin-top:5mm">
+    <div class="mini">
+      <h4>CI/CD는 명령 하나로</h4>
+      <ul class="dots">
+        <li>기능 브랜치 → dev PR에서 lint · 타입 · Jest · 마이그레이션 안전 검사, dev → main 릴리스 PR이 품질 게이트를 통과하면 Vercel이 운영에 배포하고 버전 태그를 남깁니다.</li>
+        <li>앱은 JS만 바뀌면 EAS Update로 코드푸시, 네이티브가 바뀌면 EAS · 로컬 빌드 → Play Developer API · App Store Connect API로 제출까지 스킬 하나로 합니다.</li>
+        <li>앱을 내기 전에 짝이 되는 웹 변경이 운영에 나갔는지 먼저 확인합니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4>테스트는 훅까지</h4>
+      <ul class="dots">
+        <li>웹 Jest + Playwright E2E, 앱 node test · Jest, 테스트 파일 220여 개.</li>
+        <li>앱과 웹이 같이 쓰는 규칙 모듈(용어 · 본문 형식 · 알림 문구 · 피드 섞기)은 같은 픽스처로 양쪽에서 테스트합니다.</li>
+        <li>DB 가드 · Parity · PR 스크린샷 훅도 각자 테스트 스위트가 있습니다.</li>
+        <li>화면이 바뀐 PR은 에뮬레이터 · 모바일 뷰포트 캡처가 없으면 만들어지지 않습니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="folio"><span>브리디 · 풀스택 · CI/CD · 테스트</span><span>6 / 13</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">BREDY · CASE STUDIES</div>
+  <h2 class="sec">문제를 어떻게 풀었나</h2>
   <div class="case">
     <div class="case-head"><span class="n">03</span><h4>DB를 바꾸지 않고 사진 · 글 블록 에디터 만들기</h4><div class="tags"><span class="chip">에디터</span><span class="chip">호환성</span></div></div>
     <div class="case-body">
@@ -581,14 +618,6 @@
       </div>
     </div>
   </div>
-
-  <div class="folio"><span>브리디 · 사례 1~3</span><span>6 / 8</span></div>
-</section>
-
-<!-- ───────────── 5. 사례 4~6 ───────────── -->
-<section class="page">
-  <div class="eyebrow">BREDY · CASE STUDIES</div>
-  <h2 class="sec">문제를 어떻게 풀었나 (2)</h2>
 
   <div class="case">
     <div class="case-head"><span class="n">04</span><h4>경매가 끝난 뒤에도 다시 시작할 수 있게</h4><div class="tags"><span class="chip">데이터 모델링</span></div></div>
@@ -612,28 +641,7 @@
   </div>
 
   <div class="case">
-    <div class="case-head"><span class="n">05</span><h4>알림이 사라지는 버그를 고치고 화면을 다시 짜기</h4><div class="tags"><span class="chip">버그 수정</span><span class="chip">UX</span></div></div>
-    <div class="case-body">
-      <div>
-        <h5>문제</h5>
-        <p class="prob">알림 화면에 들어가자마자 전체를 읽음으로 바꾸는 요청이 나가, 새 알림 표시가 확인하기도 전에 사라졌습니다. 목록도 글자만 있어 무엇에 대한 알림인지 알기 어려웠습니다.</p>
-        <h5>해결</h5>
-        <ul class="dots">
-          <li>진입 시 호출을 없애고, 누른 알림 하나와 '모두 읽음' 버튼만 읽음 처리합니다.</li>
-          <li>오늘 · 최근 7일 · 이전으로 묶고, 사람 알림은 아바타 + 종류 뱃지, 시스템 알림은 아이콘으로 나눴습니다.</li>
-          <li>서버 응답에 대상 사진을 추가해 오른쪽 썸네일로 보여 줍니다. 표시 규칙은 앱 · 웹 공유 모듈입니다.</li>
-        </ul>
-      </div>
-      <div class="result">
-        <h5>결과</h5>
-        <div class="big">앱 · 웹 함께<small>버그 수정 + 리디자인 배포</small></div>
-        <ul class="dots"><li>HTML 시안 → A안 선택 → PRD 수용 기준으로 검증</li></ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="case">
-    <div class="case-head"><span class="n">06</span><h4>앱 크기와 지표 신뢰도 바로잡기</h4><div class="tags"><span class="chip">성능</span><span class="chip">데이터</span></div></div>
+    <div class="case-head"><span class="n">05</span><h4>앱 크기와 지표 신뢰도 바로잡기</h4><div class="tags"><span class="chip">성능</span><span class="chip">데이터</span></div></div>
     <div class="case-body">
       <div>
         <h5>문제</h5>
@@ -653,72 +661,403 @@
     </div>
   </div>
 
-  <div class="folio"><span>브리디 · 사례 4~6</span><span>7 / 8</span></div>
+  <div class="folio"><span>브리디 · 사례</span><span>7 / 13</span></div>
 </section>
 
-<!-- ───────────── 6. 운영 · 경력 ───────────── -->
 <section class="page">
-  <div class="eyebrow">BREDY · LAUNCH &amp; GROWTH</div>
-  <h2 class="sec">출시와 마케팅도 직접</h2>
+  <div class="eyebrow">PERSONAL PROJECT · 1인 개발</div>
+  <div class="proj-head">
+    <div>
+      <h2>언니노트 <small>Unnie Note</small></h2>
+      <div class="tagline">한국 연예 · 뷰티 · 여행 소식을 9개 언어로</div>
+    </div>
+    <dl class="meta">
+      <dt>역할</dt><dd>기획 · 웹 · 수집기 · 앱 · 운영 100%</dd>
+      <dt>스택</dt><dd>Next.js 16 · next-intl · Prisma 7 · PostgreSQL</dd>
+      <dt></dt><dd>Expo 웹뷰 앱 · GitHub Actions · Claude Haiku</dd>
+    </dl>
+  </div>
 
-  <div class="two" style="margin-top:4.5mm">
+  <div class="links">
+    <a href="https://unnienote.app"><i style="background:#e8467c"></i>unnienote.app</a>
+    <a href="https://apps.apple.com/kr/app/unnie-note/id6825244571"><i style="background:#111"></i>App Store</a>
+  </div>
+
+  <div class="unnie-top">
+  <img class="wide-shot" src="img/unnie-app.jpg" alt="언니노트 앱 화면" />
+  <div class="stats">
+    <div class="stat main"><div class="v">9<small>개 언어</small></div><div class="l">en · ja · zh-TW · zh-CN · ko<br />vi · id · fr · ru</div></div>
+    <div class="stat"><div class="v">120<small>건+</small></div><div class="l">많은 날 하루 발행 기사<br />사람 손 없이 자동</div></div>
+    <div class="stat"><div class="v">665<small>명</small></div><div class="l">계측 첫 주 방문자<br />절반 넘게 검색 유입</div></div>
+    <div class="stat"><div class="v">≈4<small>원</small></div><div class="l">기사 1편 AI 비용<br />Haiku 한 번 호출로 여러 언어</div></div>
+  </div>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">U1</span><h4>웹을 그대로 쓰는 웹뷰 앱과 웹 ↔ 앱 브리지</h4><div class="tags"><span class="chip">React Native</span><span class="chip">WebView</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>문제</h5>
+        <p class="prob">네이티브로 다시 만들면 9개 언어 화면을 두 벌 유지해야 하고, 웹뷰로 감싸기만 하면 탭 · 공유 · 저장 목록이 앱답지 않습니다.</p>
+        <h5>해결</h5>
+        <ul class="dots">
+          <li>하단 탭은 네이티브, 내용은 운영 사이트 웹뷰로 두고, 웹은 User-Agent로 앱 안인지 알아 헤더 · 탭을 숨깁니다.</li>
+          <li>웹 → 앱 메시지 5종(저장 · 탭 · 언어 · 공유 · 뒤로)을 타입으로 정하고, 모양이 틀리거나 모르는 메시지는 길이 제한 · 허용 목록으로 버립니다.</li>
+          <li>앱이 페이지마다 심는 스크립트로 웹 localStorage 저장 목록을 앱 AsyncStorage(원본)와 맞춥니다. 공유는 네이티브 시트, 언어 링크를 누르면 앱 언어가 바뀝니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">웹 코드 거의 그대로<small>App Store 출시</small></div>
+        <ul class="dots"><li>웹에서 직접 보내는 메시지는 함수 하나뿐</li><li>브리지 규칙은 순수 함수 + 테스트</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">U2</span><h4>제가 안 건드려도 2시간마다 기사가 올라갑니다</h4><div class="tags"><span class="chip">자동화</span><span class="chip">SEO</span></div></div>
+    <div class="case-body">
+      <div>
+        <ul class="dots">
+          <li>GitHub Actions가 2시간마다 네이버 엔터 랭킹 · 네이트판에서 화제를 모으고, 규칙과 위키데이터 인물 사전(해외 인지도)으로 채점합니다. 비용 때문에 AI 채점은 없앴습니다.</li>
+          <li>고른 주제는 Haiku 한 번 호출로 여러 언어 기사를 쓰고, 위키미디어 CC 사진을 붙여 발행합니다.</li>
+          <li>언어별 hreflang · 용어 사전으로 검색 노출을 맞췄고, 일본어 기사는 구글 · 야후 재팬에서 꾸준히 유입됩니다.</li>
+          <li>매일 6시 지표 브리핑: 숫자는 스크립트가 모으고 에이전트는 해석만 합니다. 쿼리를 매번 새로 짜면 토큰도 들고 지표도 흔들리기 때문입니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">2시간마다<small>수집 → 채점 → 작성 → 발행</small></div>
+        <ul class="dots"><li>운영 DB가 무료 한도로 멈춘 날 하루 안에 이전</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="folio"><span>언니노트</span><span>8 / 13</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">PRODUCT · BUSINESS MODEL</div>
+  <h2 class="sec">코드 짜기 전에 계산기부터 두드립니다</h2>
+  <p class="lead">만들고 싶은 건 많은데 혼자라 시간이 없습니다. 그래서 뭘 먼저 만들지는 경쟁사를 뜯어보고 정합니다. 숫자는 공개된 자료로 확인하고, 매출은 안될 때, 보통일 때, 잘될 때로 나눠서 봅니다.</p>
+
+  <div class="case">
+    <div class="case-head"><span class="n">B1</span><h4>브리디: 1등이랑 정면으로 붙지 않기</h4><div class="tags"><span class="chip">경쟁 분석</span><span class="chip">BM 설계</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>뜯어본 것</h5>
+        <ul class="dots">
+          <li>파충류 분양 1위 서비스를 공개 자료로 뜯어봤습니다. 가입 7.5만, 수수료 3.3%, 구독 월 3.96만·9.9만 원, 연 매출 19.4억. 파충류 쪽은 이미 거기 다 모여 있었습니다. 그런데 <b>곤충이랑 관상어 전용 경매 도구는 아무리 찾아도 없었습니다</b>.</li>
+          <li>관상어 산업만 4,443억이고, 물고기 키우는 집이 24~27만 가구입니다. 어류와 곤충은 야생생물법 영업허가 대상도 아니라 규제 걱정도 덜했습니다.</li>
+        </ul>
+        <h5 style="margin-top:2.5mm">그래서</h5>
+        <ul class="dots">
+          <li>곤충·관상어로 먼저 들어가고, 돈은 <b>실제 거래 확인 → 샵 광고 → 분양자 구독 → 안전결제 수수료</b> 순서로 붙이기로 했습니다.</li>
+          <li>아직 거래가 없어서 지금은 광고로 버팁니다. 생물 거래 화면에는 구글 광고 대신 쿠팡만 붙였습니다. 생물 거래 때문에 정책에 걸리면 같은 계정에 묶인 앱 광고까지 같이 막히거든요.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">분양자부터<small>창립 브리더 100자리</small></div>
+        <ul class="dots"><li>'평생 경매 수수료 0원'에 'No.001' 번호 뱃지를 걸었더니 출시 전에 100자리가 다 찼습니다(10.16)</li><li>2030년까지 매출을 세 갈래로 계산해 뒀습니다</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">B2</span><h4>언니노트: 남들이 안 쓰는 언어부터</h4><div class="tags"><span class="chip">시장 분석</span><span class="chip">비용 설계</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>뜯어본 것</h5>
+        <ul class="dots">
+          <li>대만 사람들이 보는 K-컬처 미디어(월 85만 PV)를 하나하나 세어 봤습니다. 하루 10~16편을 쓰는데 일본어 글은 한 편도 없었습니다.</li>
+          <li>일본어 K-pop 뉴스 사이트에는 한 달에 500만 명이 들어오고(95%가 일본), 네티즌 반응을 번역한 사이트는 한 번 들어오면 6페이지 넘게 봅니다. 찾는 사람은 많은데 써 주는 곳이 없었던 겁니다.</li>
+        </ul>
+        <h5 style="margin-top:2.5mm">그래서</h5>
+        <ul class="dots">
+          <li>일본어를 첫 번째 언어로 두고, 영어로 옮긴 네티즌 반응, 여행·생활 가이드(제휴 수익), 경쟁사가 손 안 댄 릴스와 스레드로 갑니다.</li>
+          <li>AI 비용은 기사 1편에 4원 정도로 맞췄습니다. 아직 버는 돈이 없어서 총액 상한을 코드에 박아 뒀고(<code>assertBudget</code>), 돈 많이 드는 AI 채점은 빼고 위키데이터 인물 사전으로 바꿨습니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>12개월 차 월 매출 목표</h5>
+        <div class="big">110만 · 700만 · 2,750만<small>안될 때 · 보통 · 잘될 때</small></div>
+        <ul class="dots"><li>월 PV 20만 · 60만 · 150만 가정</li><li>채널마다 1,000뷰당 얼마 버는지까지 근거를 달아 뒀습니다</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="blk">브리디는 이 순서로 돈을 벌 생각입니다</h3>
+  <div class="road">
+    <div class="on"><div class="s">STEP 1 · 지금</div><b>거래부터 확인</b><span>창립 브리더 100명과 거래 후기, 입양 확정으로 거래가 앱 안에서 끝나는지부터 봅니다. 그동안 서버비는 광고로 메웁니다</span></div>
+    <div><div class="s">STEP 2</div><b>샵 광고</b><span>같은 종을 키우는 사람한테 닿고 싶은 샵과 용품점. 관심 카테고리와 동네 데이터를 그대로 쓸 수 있습니다</span></div>
+    <div><div class="s">STEP 3</div><b>분양자 구독</b><span>노출, 경매 슬롯, 동네 노출을 묶어서 월 구독으로. 경쟁사는 월 3.96만·9.9만 원을 받습니다</span></div>
+    <div><div class="s">STEP 4</div><b>안전결제 수수료</b><span>입양자 지정, 입양 확정 흐름 위에 결제를 얹습니다. 창립 브리더는 약속대로 경매 수수료 0원입니다</span></div>
+  </div>
+
+  <div class="folio"><span>제품 · BM</span><span>9 / 13</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">PRODUCT · DECISIONS &amp; SCALABILITY</div>
+  <h2 class="sec">안 만든 것도 많습니다</h2>
+  <p class="lead">아이디어가 떠오르면 데이터부터 뒤져 봅니다. 대부분은 거기서 탈락합니다. 대신 나중에 커질 것 같은 자리는 DB에 미리 깔아 둡니다.</p>
+
+  <div class="grid2">
     <div class="mini">
-      <h4>출시 · 운영 자동화</h4>
+      <h4><span class="n">D1</span>미니홈피는 안 만들었습니다</h4>
       <ul class="dots">
-        <li>dev → main 릴리스 PR이 CI 품질 게이트를 통과하면 Vercel이 운영에 자동 배포</li>
-        <li>Google Play Developer API로 출시 노트 · 트랙 제출 · 스토어 스크린샷 교체 자동화</li>
-        <li>스토어 제출 이미지와 위 배너도 HTML로 만들어 스크립트로 렌더링</li>
-        <li>PR에 화면 캡처가 없으면 생성을 막는 훅, 캡처를 올려 PR 표로 붙이는 스크립트</li>
+        <li>브리디의 한 방이 뭘까 고민하면서 미니홈피 꾸미기, 소개팅, 동네, 기록을 후보로 놓고 실제 글과 방문 기록을 뒤졌습니다. 꾸미기나 소개팅을 원하는 글은 한 건도 없었습니다.</li>
+        <li>그래서 손으로 쓰는 기록보다 <b>거래하면 저절로 쌓이는 기록</b>(낙찰, 거래 이행, 체장)이 사람을 붙잡을 거라고 보고 그쪽으로 좁혔습니다.</li>
       </ul>
     </div>
     <div class="mini">
-      <h4>마케팅 · 사용자 모으기</h4>
+      <h4><span class="n">D2</span>당근이 막은 손님 받기</h4>
       <ul class="dots">
-        <li><a href="https://www.instagram.com/bredy_breeder/"><b>Instagram</b></a> · <a href="https://www.threads.com/@bredy_breeder"><b>Threads</b></a> · <a href="https://blog.naver.com/bredy_team"><b>네이버 블로그</b></a> 운영</li>
-        <li>카드뉴스 템플릿 제작부터 여러 채널 게시까지 Playwright로 자동화</li>
-        <li>브리더에게 직접 DM 영업, '창립 브리더 No.001' 번호 뱃지로 초기 분양자 모집</li>
-        <li>메타 광고 집행, PostHog로 가입 · 기능 사용 흐름 측정</li>
+        <li>당근에서는 생물 분양 글을 못 씁니다. 갈 데가 없어진 물고기·곤충 동네 나눔은 바로 받아서 홍보했습니다.</li>
+        <li>릴레이 임보나 캣맘 모임은 받지 않기로 했습니다. 당근이 그걸 막은 이유(맡기고 잠적하는 일)까지 같이 떠안게 되니까요. 햄스터나 토끼 분양이 몰리면 영업 신고 문제가 생길 수 있다는 것도 미리 짚어 뒀습니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">D3</span>'상품'이라는 말을 뺐습니다</h4>
+      <ul class="dots">
+        <li>'상품', '판매'라고 하면 동물이 물건처럼 보여서 화면 문구를 전부 '분양', '입양'으로 바꿨습니다. DB 값은 그대로 두고 화면에 보여 줄 때만 바꿉니다.</li>
+        <li>강아지·고양이 키우는 분들은 '브리더'라는 말에서 펫숍을 떠올립니다. 그래서 포유류만 고른 사람에게는 '집사'라고 부르고 경매도 숨깁니다. 파충류·곤충 쪽에서는 브리더가 자랑이라 그대로 뒀습니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">D4</span>텅 빈 게시판은 공공 데이터로</h4>
+      <ul class="dots">
+        <li>강아지·고양이 탭을 열면서 분양보다 입양을 먼저 보여 주고 싶었습니다. 공공 유기동물 API로 보호소 공고 2,400건을 가져와 '보호소 아이들'에 넣었습니다.</li>
+        <li>3시간마다 다시 맞추고, 두 번 연속 안 보이는 공고는 숨깁니다. 다만 한 번에 30% 넘게 사라지면 아이들이 입양 간 게 아니라 API가 고장 난 거라서 숨기지 않습니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">D5</span>모르는 사람한테 생물을 받으려면</h4>
+      <ul class="dots">
+        <li>개인끼리 생물을 주고받을 때는 결국 '이 사람 믿어도 되나'가 전부입니다. 그래서 목록 카드마다 누가 올렸는지 보이게 하고, 프로필에 거래 완료 수와 활동 기간을 띄웁니다.</li>
+        <li>거래 후기는 분양자가 입양자로 지정한 사람만 쓸 수 있습니다. 가짜 후기는 쓸 자리부터 없습니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">D6</span>해외는 아직이지만 자리는 깔아 뒀습니다</h4>
+      <ul class="dots">
+        <li>해외 진출은 미뤘지만 DB에 <code>country</code>와 <code>locale</code>은 먼저 넣었습니다. 분양·경매는 나라마다 법이 달라서 나라로 나누고, 커뮤니티는 언어로 나눕니다.</li>
+        <li>경매는 다시 열어도 새로 등록하지 않고 회차로 이어지고, 모든 목록은 카테고리 트리 하나로 거릅니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="blk">제가 지키는 것들</h3>
+  <div class="principles">
+    <div><b>있으면 좋겠다는 건 일단 미룹니다</b><span>실제 글이나 방문 기록에 그 욕구가 보일 때 만듭니다.</span></div>
+    <div><b>남이 막은 시장은 이유부터 봅니다</b><span>기회인 건 맞는데, 막힌 이유까지 따라 들어오면 그 부분은 버립니다.</span></div>
+    <div><b>커질 자리는 구조에 먼저</b><span>나라, 언어, 회차 같은 건 DB에 미리 두고 화면은 필요해질 때 엽니다.</span></div>
+    <div><b>돈 새는 건 코드로 막습니다</b><span>AI 비용, 에이전트 토큰, 무료 서버 한도는 문서에 적는 대신 가드와 훅으로 겁니다.</span></div>
+  </div>
+
+  <div class="folio"><span>제품 · 결정과 확장성</span><span>10 / 13</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">DATA · 매일 아침 지표 브리핑</div>
+  <h2 class="sec">매일 아침, 숫자로 하루를 시작합니다</h2>
+  <p class="lead">제일 자랑하고 싶은 건 사실 이겁니다. 회사에서도, 브리디와 언니노트에서도 매일 아침 PostHog 지표 브리핑이 옵니다. 숫자만 늘어놓으면 아무도 안 읽어서, "왜 떨어졌을까"를 가설로 세우고 기획자와 디자이너가 바로 가져다 쓸 수 있는 개선 아이디어까지 붙여서 넘깁니다.</p>
+
+  <h3 class="blk">브리핑이 도는 방식</h3>
+  <div class="road">
+    <div class="on"><div class="s">1 · 모으기</div><b>숫자는 스크립트가</b><span>어제와 지난 7일을 같은 쿼리로 뽑습니다. 에이전트가 매번 쿼리를 새로 짜면 토큰도 들고 숫자가 날마다 조금씩 달라지거든요</span></div>
+    <div><div class="s">2 · 찾기</div><b>어디서 빠지는지</b><span>유입 채널, 퍼널이 끊기는 단계, 이탈이 높은 페이지를 봅니다</span></div>
+    <div><div class="s">3 · 가설</div><b>왜, 그리고 뭘 고칠지</b><span>원인 가설과 오늘 해 볼 일 두세 개를 적어서 기획자 · 디자이너에게 넘깁니다</span></div>
+    <div><div class="s">4 · 확인</div><b>다음 날 다시 보기</b><span>고친 게 숫자를 움직였는지 다음 날 브리핑에서 다시 확인합니다</span></div>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">M1</span><h4>회사: 팀 채널에 매일 아침</h4><div class="tags"><span class="chip">BHSN</span><span class="chip">퍼널</span></div></div>
+    <div class="case-body">
+      <div>
+        <ul class="dots">
+          <li>매일 아침 팀 공통 슬랙 채널에 지표 브리핑을 올렸습니다. 숫자 대신 어디서 사람이 빠지는지, 무엇을 고치면 좋을지를 먼저 적었습니다.</li>
+          <li>Cue의 작성 → 검토 → 전자서명 → 체결 흐름을 단계별로 잴 수 있게 단계별 성공 · 모달 노출 이벤트를 직접 심고, 광고로 들어온 사람의 UTM을 가입 API까지 넘겨 가입 전환도 보이게 했습니다.</li>
+          <li>기획자 · 디자이너는 브리핑에 적힌 가설을 보고 화면을 고쳤고, 저는 다음 날 같은 지표로 확인했습니다. 회의에서 "느낌상"으로 시작하던 이야기가 숫자로 시작하게 됐습니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>같이 한 것</h5>
+        <div class="big">팀 일정 브리핑<small>누가 뭘 하고 어디서 막혔는지</small></div>
+        <ul class="dots"><li>회의 전에 막힌 곳이 보여서 일정 조율이 빨라짐</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="two" style="margin-top:4.5mm">
+    <div class="mini">
+      <h4>브리디 브리핑에서 나온 가설</h4>
+      <ul class="dots">
+        <li>인스타 유입이 하루 만에 뚝 떨어짐 → 프로필 · 게시물 링크부터 점검하고, 반응 좋았던 콘텐츠 형식을 다시 올리기</li>
+        <li>어디서 왔는지 모르는 방문자 74명 → 인스타 · 스레드 링크에 UTM을 통일해서 붙이기</li>
+        <li>이틀 동안 로그인 실패가 절반 가까이 → 소셜 로그인 오류인지 실패 사유부터 확인</li>
+        <li>애초에 숫자를 믿으려고 페이지뷰 누락, 사용자 식별 0건 같은 측정 결함 4개를 먼저 고쳤습니다</li>
+        <li><b>이 브리핑을 보며 SNS · SEO · 광고를 매일 손봤더니 웹 하루 방문자가 11명(10.06)에서 닷새 만에 115명(10.11)이 됐습니다</b> (PostHog, 최고 137명 10.25)</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4>언니노트 브리핑에서 나온 가설</h4>
+      <ul class="dots">
+        <li>사우디 기사가 프랑스어 · 베트남어 · 일본어로 일주일에 220명을 데려왔는데 66~97%가 바로 나감 → 글 아래 같은 언어 인기 기사 3개를 붙이기</li>
+        <li>일본어 홈으로 들어오는 사람이 28명 → 19명 → 오래 읽힌 일본어 기사를 홈 위로 올리기</li>
+        <li>제휴 상자는 일주일에 86번 보였는데 클릭은 0 → 어느 언어 · 어느 글에서 보였는지 나눠서 원인 찾기</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="blk">이 일이 좋은 이유</h3>
+  <p style="border-left:3px solid var(--accent); padding:1mm 0 1mm 4mm; font-size:10pt; line-height:1.75; color:var(--text)">
+    고친 화면이 정말 나아졌는지 다음 날 아침에 바로 알 수 있어서입니다.<br />
+    "이게 더 나을 것 같아요" 대신 "어제 여기서 절반이 나갔어요, 이렇게 바꿔 보면 어떨까요"라고 말할 수 있게 됐습니다.
+    개발자인 제가 다음에 뭘 고칠지 먼저 들고 가니까, 기획자 · 디자이너와 이야기하는 속도도 빨라졌습니다.
+  </p>
+
+  <div class="folio"><span>지표 브리핑</span><span>11 / 13</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">AI AGENT OPS · 혼자서 팀처럼</div>
+  <h2 class="sec">혼자인데 팀처럼 일하는 법</h2>
+  <p class="lead">혼자 서비스 두 개를 굴리려니 손이 모자라서 반복되는 일은 에이전트한테 넘겼습니다. 설계와 판단은 제가 하고, 에이전트가 만든 PR도 화면과 diff를 직접 보고 제가 머지합니다. 문제는 에이전트가 말로 정한 규칙을 자주 까먹는다는 건데, 그래서 중요한 건 훅이랑 스크립트로 박아 둡니다. 만든 스킬은 <a href="https://github.com/ytw418/ytw418-agent-skills"><b>ytw418-agent-skills</b></a>에 모았습니다.</p>
+
+  <div class="grid2">
+    <div class="mini">
+      <h4><span class="n">A1</span>토큰이 새는 걸 미리 막기</h4>
+      <ul class="dots">
+        <li>기획 문서 하나 쓰는 데 주간 한도 10%를 날린 날이 있었습니다. 그 뒤로 질문 하나에 5%를 못 넘게 훅을 걸었습니다. 서브에이전트 몫까지 합쳐 세다가 2/3쯤 오면 알려 주고, 넘으면 멈추고 한 일과 남은 일을 보고하게 했습니다.</li>
+        <li>평소엔 Opus, 파일 뒤지는 건 Haiku, 설계가 막힐 때만 더 비싼 모델을 부릅니다.</li>
+        <li>오래 걸리는 작업은 계속 들여다보지 않고 끝나면 알림을 받습니다. 토큰이 어디로 샜는지 세는 스킬, 안 쓰는 MCP를 치우는 스킬도 만들었습니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">A2</span>자동화 전용 브라우저</h4>
+      <ul class="dots">
+        <li>운영 계정 작업(인스타 · 스레드 · 네이버 · PostHog)은 자동화 전용 크롬 프로필 하나에서만. 맥 로그인 때 같이 켜집니다.</li>
+        <li>에이전트는 새 브라우저를 띄우지 않고 CDP로 붙어 자기 탭만 열고 닫습니다. 같은 사이트는 잠금으로 한 번에 한 작업.</li>
+        <li>세션마다 로그인을 다시 하던 일이 없어졌습니다. 회사 계정 크롬은 따로 씁니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">A3</span>인스타 · 스레드 · X · 블로그 자동화</h4>
+      <ul class="dots">
+        <li>무료 분양 · 경매 글로 홍보 카드(1080×1350)를 만들어 네 곳에 올리고, 실제로 올라갔는지 다시 확인합니다.</li>
+        <li>브리더 대상 인스타 DM 영업: 답장 정리 → 하루 20명까지 간격을 두고 발송(몰아 보내면 로그아웃).</li>
+        <li>매일 새벽 유행 밈을 찾아 영상을 만들고, 에뮬레이터의 인스타 앱을 직접 눌러 유행 음원을 붙여 릴스를 예약합니다(웹에선 음원을 못 붙임).</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">A4</span>네이버 카페 자동화</h4>
+      <ul class="dots">
+        <li>생물 카페의 최근 질문에 정보 댓글을 달고, 같은 주제로 블로그 글을 써서 링크합니다. 블로그 글 끝이 브리디로 이어집니다.</li>
+        <li>운영하는 카페에는 하루 세 번 편성표대로 정보글을 올립니다. 원문까지 열어 사실을 확인하고, 말투 · 출처 · 원문 복사 검사를 통과해야 등록됩니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">A5</span>훅으로 박아 둔 규칙</h4>
+      <ul class="dots">
+        <li>운영 배포는 그 메시지에서 직접 시켰을 때만. 이전의 "다 승인"은 다음 작업으로 이어지지 않습니다.</li>
+        <li>DB를 비우거나 구조를 바꾸는 명령은 터미널 · 파일 쓰기 · 외부 도구 어디서든 거부.</li>
+        <li>앱만 고치고 웹을 빼먹으면 커밋이 막히고, 스크린샷 없는 화면 PR은 만들어지지 않습니다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4><span class="n">A6</span>맥북 한 대로 버티기</h4>
+      <ul class="dots">
+        <li>16GB 맥북에서 개발 서버 · Metro · 에뮬레이터가 겹쳐 스왑이 25GB까지 찬 날이 있었습니다.</li>
+        <li>그 뒤 에이전트는 무거운 작업 전에 메모리 압력 · 스왑을 재고, 4GB를 넘으면 자기가 띄운 것부터 정리합니다. 빌드 · 전체 테스트는 컴퓨터 전체에서 한 번에 하나, 누가 띄웠는지 모르는 프로세스는 끄지 않고 보고만 합니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="blk">제가 자는 동안 도는 일정 (일부)</h3>
+  <div class="sched">
+    <div><b>05:00</b>유행 밈 영상 → 릴스 · 쇼츠 · 틱톡</div>
+    <div><b>06:00</b>언니노트 어제 지표 브리핑</div>
+    <div><b>08:00</b>개인 할 일 브리핑 → 메모</div>
+    <div><b>08:30 · 12:30 · 19:30</b>카페 정보글</div>
+    <div><b>09:00 · 12:00</b>인스타 DM 답장 · 영업</div>
+    <div><b>2시간마다</b>언니노트 수집 → 기사 발행</div>
+  </div>
+
+  <div class="folio"><span>에이전트 운영</span><span>12 / 13</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">WORK · 센슈얼모먼트 · 2022.06 ~ 2023.07</div>
+  <div class="proj-head">
+    <div>
+      <h2>플링 <small>Pling</small></h2>
+      <div class="tagline">오디오 · 웹소설 플랫폼의 다국어 웹앱, CMS, 백오피스</div>
+    </div>
+    <dl class="meta">
+      <dt>스택</dt><dd>React · Next.js 13 · GraphQL · SWR · Tailwind</dd>
+      <dt>링크</dt><dd><a href="https://app.plingcast.com" style="border-bottom:1px solid #c3c7cd">app.plingcast.com</a></dd>
+    </dl>
+  </div>
+
+  <div class="case">
+    <div class="case-head"><span class="n">P1</span><h4>GraphQL 응답 캐싱으로 App Router ISR 만들기</h4><div class="tags"><span class="chip">성능</span><span class="chip">i18n</span></div></div>
+    <div class="case-body">
+      <div>
+        <h5>문제</h5>
+        <p class="prob">Next.js 13 App Router에서 i18n 동적 경로 때문에 모든 페이지가 SSR로 돌았고, GraphQL이라 fetch 캐시 옵션도 쓸 수 없었습니다.</p>
+        <h5>해결</h5>
+        <ul class="dots">
+          <li>Next 서버에서 API 경로별로 응답을 캐싱해 ISR처럼 동작하게 했습니다.</li>
+          <li>메인 슬라이드는 어드민에서 수정할 때만 갱신하고, 하단 콘텐츠는 5분 캐시를 둡니다.</li>
+          <li>next/link 프리패치가 GET 요청을 과하게 보내는 버그를 찾아 Next.js에 이슈로 올렸습니다.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <h5>결과</h5>
+        <div class="big">메인 서버 호출 ↓<small>다국어 웹앱 정적화</small></div>
+        <ul class="dots"><li><a href="https://github.com/vercel/next.js/issues/49844"><b>vercel/next.js#49844</b></a> 다음 버전에서 수정</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="two" style="margin-top:4mm">
+    <div class="mini">
+      <h4>출판사 · 크리에이터 CMS</h4>
+      <ul class="dots">
+        <li>작품 업로드(다중 파일 · 드래그 정렬) · 예약 업로드, 매출 · 정산 · 엑셀 다운로드</li>
+        <li>업로드 금칙어 필터, 앱 탭별 슬라이드 예약 수정, 쿠폰 발급</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4>품질 · 운영</h4>
+      <ul class="dots">
+        <li>JS → TS 전환, JWT + iron-session 인증 개편, moment → day.js로 번들 축소</li>
+        <li>Amplitude · GA · Sentry · Axiom 트래킹, 외부에 노출되던 Sentry 소스맵 조치</li>
       </ul>
     </div>
   </div>
 
   <h3 class="blk">경력</h3>
   <div class="job">
-    <div><div class="co">BHSN (앨리비)</div><div class="when">2025.06 ~ 현재 · Frontend</div></div>
-    <div class="desc"><b>AI 법률 에이전트</b>와 전자서명 · 계약서 검토 · 작성 · 리뷰 · 이행관리를 하는 계약 관리 SaaS의 프론트엔드. 신규 AI 계약 앱 <b>Cue</b>의 목록 · 상세 · 전자서명 · 업로드 영역 FE 리드, <b>삼성SDS 법무시스템</b> 참여(계약서 비교 · 전자결재), 통합 회원가입 · SSO · 결제. <b>머지 PR 352건</b>(자세한 내용은 2~3쪽). AI 에이전트 개발 워크플로우(스킬 · 규칙 · 비용 관리)를 팀에 도입.</div>
+    <div><div class="co">BHSN</div><div class="when">2025.06 ~ 현재 · Frontend</div></div>
+    <div class="desc">AI 법률 에이전트 · AI 계약 앱 Cue · 계약 관리 SaaS 앨리비. 삼성SDS 법무시스템 참여(계약서 비교 · 전자결재), 팀에 AI 에이전트 개발 워크플로우 도입.</div>
   </div>
   <div class="job">
     <div><div class="co">핀포인트</div><div class="when">2023.08 ~ 2025.06 · Frontend</div></div>
-    <div class="desc">빌딩 관리 CMS ctrl.room. 상품 · CS · 방문자 초대 고도화, 변경내역 · 관리자메모 신규 개발. <b>CS 데이터를 LLM으로 분석하는 리포트 기능</b>, Recoil 전역 모달 시스템, react-query 점진 도입.</div>
+    <div class="desc">빌딩 관리 CMS ctrl.room. 변경내역 · 관리자메모 신규 개발, <b>CS 데이터를 LLM으로 분석하는 리포트</b>, Recoil 전역 모달, react-query 점진 도입.</div>
   </div>
   <div class="job">
     <div><div class="co">센슈얼모먼트</div><div class="when">2022.06 ~ 2023.07 · Frontend</div></div>
-    <div class="desc">오디오 · 웹소설 플랫폼 플링 웹앱, 출판사 · 크리에이터 CMS, 백오피스. Next.js App Router에서 <b>GraphQL 응답 캐싱으로 ISR 구현</b>, i18n · SEO · 성능 최적화.</div>
+    <div class="desc">플링 다국어 웹앱 · CMS · 백오피스(위), React Native로 앱 일부 화면.</div>
   </div>
   <div class="job">
     <div><div class="co">올맵</div><div class="when">2021.04 ~ 2021.11 · Web / Hybrid App</div></div>
-    <div class="desc">자사 · 외주 웹사이트와 웹뷰 하이브리드 앱 개발.</div>
+    <div class="desc">자사 · 외주 웹사이트, 안드로이드 · React Native <b>웹뷰 하이브리드 앱</b>. 대용량 이미지 트래픽 초과를 레이지 로딩으로, Play 리젝을 정책 위반 요소 처리로 해결.</div>
   </div>
 
-  <h3 class="blk">그 밖의 프로젝트</h3>
-  <div class="proj-row">
-    <div class="nm"><a href="https://github.com/ytw418/ralph-codex">ralph-codex</a></div>
-    <div class="ds">AI 코딩 에이전트용 스펙 기반 실행 루프. PRD를 읽기 전용 기준으로 두고 매 반복마다 새 프로세스로 에이전트를 실행하며, 테스트가 통과할 때만 커밋합니다.</div>
-  </div>
-  <div class="proj-row">
-    <div class="nm"><a href="https://github.com/ytw418/ytw418-agent-skills">ytw418-agent-skills</a></div>
-    <div class="ds">Claude Code · Codex 스킬 모음. PR 완주 루프(리뷰 봇 · CI · 스크린샷), 토큰 사용처 집계 · 절감, 앱 배포 · 스모크 테스트 · 이벤트 추가 등 반복 작업을 스킬로 만들었습니다.</div>
-  </div>
-  <div class="proj-row">
-    <div class="nm"><a href="https://nextneonews.vercel.app/">NeoNews</a></div>
-    <div class="ds">실시간 K-POP 뉴스 플랫폼 (개인)</div>
-  </div>
-  <div class="proj-row">
-    <div class="nm"><a href="https://www.dosuri.site/">도수리</a></div>
-    <div class="ds">도수치료 예약 서비스 (팀) · <a href="https://play.google.com/store/apps/details?id=com.ytw418.dosuriapp" style="border-bottom:1px solid #c3c7cd">Android 앱</a></div>
-  </div>
-
-  <div class="folio"><span>ytw418@naver.com · github.com/ytw418</span><span>8 / 8</span></div>
+  <div class="folio"><span>ytw418@naver.com · github.com/ytw418</span><span>13 / 13</span></div>
 </section>
 
 </body>
