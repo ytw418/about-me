@@ -408,12 +408,20 @@
     </div>
   </div>
 
-  <div class="mini" style="margin-top:5mm">
+  <div class="mini" style="margin-top:3mm">
     <h4>그 밖에</h4>
     <ul class="dots">
       <li>Cue 퍼널: 작성 · 검토 · 전자서명 · 체결 단계마다 다음 단계로 이끄는 모달, 단계별 성공 · 노출을 PostHog 이벤트로 측정</li>
       <li>Cue 다국어 키 951개 · 139파일 이전, 디자인 토큰 · 공통 UI, 결제 · 구독 · 프로모션</li>
       <li>팀 AX: 기획서 · 피그마에서 빠진 요구사항을 찾아 담당자별 질문지를 만드는 킥오프 대시보드, Jira 스킬, 매일 아침 PostHog 지표 · 팀 일정 브리핑</li>
+    </ul>
+  </div>
+
+  <div class="mini" style="margin-top:3mm">
+    <h4>백엔드(Kotlin · Spring)와 API 계약 맞추기</h4>
+    <ul class="dots">
+      <li>dev · demo 응답 전수 실측으로 판별 값 · 스웨거 불일치를 찾아 <code>reviewStatus</code> 기준 재합의, 실패 전용 상태값 요청</li>
+      <li>SSO 가입 API 유입 필드 추가와 서버 PostHog 이벤트 연결 구조 제안, 서버 <code>ANALYZING</code> 도입 후 화면 추론 로직 제거</li>
     </ul>
   </div>
 
@@ -589,6 +597,14 @@
         <li>화면이 바뀐 PR은 에뮬레이터 · 모바일 뷰포트 캡처가 없으면 만들어지지 않습니다.</li>
       </ul>
     </div>
+  </div>
+
+  <div class="mini" style="margin-top:4mm">
+    <h4>서버와 DB도 직접</h4>
+    <ul class="dots">
+      <li>Next.js API + Prisma · PostgreSQL 스키마 · 마이그레이션 직접 설계, 새 컬럼은 backfill 없이 기본값으로 동작</li>
+      <li>재방문 알림 4종을 크론으로 서버 발송(횟수 · 야간 제한), 가입 등 서버 이벤트 15종을 PostHog로 전송</li>
+    </ul>
   </div>
 
   <div class="folio"><span>브리디 · 풀스택 · CI/CD · 테스트</span><span>6 / 14</span></div>
