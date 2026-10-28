@@ -3,8 +3,8 @@
 프로덕트 개발자입니다. 직접 운영하는 서비스에서는 서버와 DB까지 혼자 만듭니다.
 숫자와 사용자 제보에서 문제를 찾고, AI 에이전트와 같이 고칩니다.
 
-회사에서는 AI 계약 관리 서비스(앨리비)의 프론트엔드를 만들고,
-퇴근 후에는 생물 커뮤니티 브리디와 K-컬처 미디어 언니노트를 혼자 만들고 운영합니다.
+AI agent 계약 관리 서비스(앨리비)의 프론트엔드와
+생물 커뮤니티 브리디와 K-컬처 미디어 언니노트를 혼자 만들고 운영합니다.
 
 📄 [포트폴리오 PDF 보기](pdf-portfolio/%EC%9C%A4%EC%84%B1%EC%A4%80_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf) · [다운로드](https://github.com/ytw418/about-me/raw/main/pdf-portfolio/%EC%9C%A4%EC%84%B1%EC%A4%80_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf)
 
