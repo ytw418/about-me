@@ -206,7 +206,7 @@
   .p1 .hero { padding-bottom: 4mm; }
   .p1 .intro { margin-top: 5mm !important; }
   .p1 .cards3 { margin-top: 5mm !important; }
-  .p1 h3.blk { margin-top: 5.5mm !important; margin-bottom: 1.5mm !important; }
+  .p1 h3.blk { margin-top: 4.2mm !important; margin-bottom: 1.5mm !important; }
   .p1 table.stack td { padding: 1.3mm 0 !important; }
   .p1 .proj-row { padding: 1.2mm 0 !important; }
   .unnie-top { display: grid; grid-template-columns: auto 1fr; gap: 4mm; margin-top: 4mm; align-items: stretch; }
@@ -246,12 +246,12 @@
   </div>
 
   <p class="intro">
-    <span class="hl">프론트엔드 개발자 윤성준입니다.</span> 낮에는 BHSN에서 <b>AI 법률 에이전트</b>와 <b>AI 계약 앱 Cue</b> 화면을 만들고,
-    밤에는 생물 커뮤니티 <b>브리디</b>와 K-컬처 미디어 <b>언니노트</b>를 혼자 만듭니다. 시장 조사부터 서버, 앱, 마케팅까지 전부 제 몫입니다.
+    <span class="hl">5년차 프론트엔드 개발자 윤성준입니다.</span> 요즘은 그냥 프로덕트 개발자라고 소개하는 편이에요.
+    회사(BHSN)에선 <b>AI 법률 에이전트</b>랑 <b>AI 계약 앱 Cue</b> 화면 만들고, 퇴근하고는 <b>브리디</b>(생물 커뮤니티)랑 <b>언니노트</b>(K-컬처 미디어)를 혼자 굴립니다.
   </p>
   <p class="intro-sub">
-    혼자 다 하려니 손이 모자라서 반복되는 일은 AI 에이전트한테 넘겼습니다. 제일 아끼는 건 아침 지표 브리핑입니다.
-    PostHog 숫자로 가설을 세워 기획자 · 디자이너에게 넘기는 일을 회사에서도, 제 서비스에서도 매일 합니다.
+    서버, DB, 마케팅까지 그냥 제가 합니다. 브리디는 10월 20일에 스토어 두 곳 다 나왔고, 웹은 20일 동안 74번 배포했어요.
+    손 모자란 건 에이전트한테 넘기고, 매일 아침 PostHog 숫자 보고 뭘 고칠지 정합니다(회사에서도 똑같이).
   </p>
 
   <div class="cards3">
@@ -455,8 +455,8 @@
   </div>
 
   <p class="lead" style="margin-top:4mm">
-    생물을 키우는 사람들이 사진으로 기록하고, 분양하고, 경매하고, 혈통을 관리하는 커뮤니티입니다.
-    v1(Firebase) → v2 → v3(Next.js + Prisma)로 세 번 다시 만들었고, 2026년 6월부터 같은 백엔드를 쓰는 Expo 앱을 함께 만들고 있습니다.
+    곤충, 파충류, 물고기 키우는 사람들이 사진 올리고, 분양하고, 경매하고, 혈통까지 남기는 곳입니다.
+    사실 세 번 갈아엎었어요(지금 건 Next.js + Prisma). 6월부터 같은 서버 쓰는 Expo 앱을 붙여서 10월 20일에 스토어에 냈고요.
   </p>
 
   <div class="stats">
@@ -502,20 +502,17 @@
 </section>
 
 <section class="page">
-  <div class="eyebrow">BREDY · SCREENS</div>
-  <h2 class="sec">같은 화면을 앱과 웹으로</h2>
-  <p class="lead">앱과 웹은 같은 시안 · 같은 PRD에서 나옵니다. 기기 기능(푸시 · 광고 · 햅틱)과 웹 전용(SEO · 관리자)만 빼고 항상 같이 바꿉니다.</p>
+  <div class="eyebrow">BREDY · SCREENS · 10.29 운영 화면</div>
+  <h2 class="sec">지금 브리디는 이렇게 생겼습니다</h2>
+  <p class="lead">10월 29일에 bredy.app 을 폰 크기로 찍은 겁니다(로그인 안 한 상태). 앱도 같은 시안으로 만들어서 거의 똑같이 생겼어요.
+  처음 들어오면 뭐 키우는지부터 물어보고, 고른 생물 글 위주로 보여 줍니다. 강아지 · 고양이만 고르면 '브리더' 대신 '집사'라고 부르고 경매도 숨겨요.</p>
 
-  <div class="shots">
-    <div class="rowlabel">앱<span>Expo · Android<br />스토어 등록 화면</span></div>
-    <div class="phone"><img src="img/app-01-home.jpg" alt="앱 홈" /></div>
-    <div class="phone"><img src="img/app-02-posts.jpg" alt="앱 반려생활" /></div>
-    <div class="phone"><img src="img/app-03-auctions.jpg" alt="앱 경매" /></div>
-    <div></div><div class="shot-cap">홈</div><div class="shot-cap">반려생활</div><div class="shot-cap">경매</div>
-    <div class="rowlabel">웹<span>bredy.app<br />운영 화면 10.14</span></div>
-    <div class="phone"><img src="img/web-home.jpg" alt="웹 홈" /></div>
-    <div class="phone"><img src="img/web-posts.jpg" alt="웹 반려생활" /></div>
-    <div class="phone"><img src="img/web-auctions.jpg" alt="웹 경매" /></div>
+  <div class="shots" style="grid-template-columns: repeat(4, 1fr); gap: 2mm 4mm; margin-top: 5mm">
+    <div class="phone" style="aspect-ratio: 390 / 844"><img src="img/now-bredy-home.jpg" alt="홈" /></div>
+    <div class="phone" style="aspect-ratio: 390 / 844"><img src="img/now-bredy-products.jpg" alt="분양" /></div>
+    <div class="phone" style="aspect-ratio: 390 / 844"><img src="img/now-bredy-life.jpg" alt="반려생활" /></div>
+    <div class="phone" style="aspect-ratio: 390 / 844"><img src="img/now-bredy-onboard.jpg" alt="처음 들어오면" /></div>
+    <div class="shot-cap">홈 · 인기글 TOP 10</div><div class="shot-cap">분양 | 경매</div><div class="shot-cap">반려생활 · 상시 토론</div><div class="shot-cap">처음 오면 관심 생물 고르기</div>
   </div>
 
   <h3 class="blk">만든 기능</h3>
@@ -529,6 +526,14 @@
     <div class="feat"><b>채팅 · 알림</b><span>1:1 채팅과 읽음 동기화, 날짜별로 묶은 알림, FCM · Web Push</span></div>
     <div class="feat"><b>운영 · 계정</b><span>관리자 페이지, 숨김 · 기간 정지 · 경고 제재와 이력, 카카오 · 구글 · 애플 로그인</span></div>
   </div>
+
+  <h3 class="blk">솔직히 자랑하고 싶은 건</h3>
+  <ul class="dots" style="font-size:9.4pt; line-height:1.75">
+    <li>출시 전에 창립 브리더 100자리를 열었는데, 출시 나흘 전(10/16)에 다 찼습니다. 번호 뱃지(No.001) 하나 붙였을 뿐인데 이게 먹히더라고요.</li>
+    <li>웹 하루 방문자가 11명(10/6)에서 닷새 만에 115명이 됐고, 출시 주(10/20~26)엔 방문 636명, 가입 121명. 가입은 전주의 두 배쯤입니다.</li>
+    <li>채팅 메시지가 출시 주에 668개였어요. 전주가 70개였으니까, 이제 진짜 사람들끼리 말이 오가기 시작했다는 게 제일 좋았습니다.</li>
+    <li>아직 갈 길은 멀어요. 설치가 첫 이틀(91건) 뒤로 확 줄었고, 그건 지금 매일 아침 숫자 보면서 고치는 중입니다.</li>
+  </ul>
 
   <div class="folio"><span>브리디 · 화면과 기능</span><span>5 / 14</span></div>
 </section>
@@ -714,7 +719,7 @@
     <div class="case-body">
       <div>
         <h5>문제</h5>
-        <p class="prob">네이티브로 다시 만들면 9개 언어 화면을 두 벌 유지해야 하고, 웹뷰로 감싸기만 하면 탭 · 공유 · 저장 목록이 앱답지 않습니다.</p>
+        <p class="prob">9개 언어 화면을 앱에서 또 만들 자신은 없었어요. 그렇다고 웹뷰로 감싸기만 하면 탭, 공유, 저장 같은 게 앱 같지가 않고요.</p>
         <h5>해결</h5>
         <ul class="dots">
           <li>하단 탭은 네이티브, 내용은 운영 사이트 웹뷰로 두고, 웹은 User-Agent로 앱 안인지 알아 헤더 · 탭을 숨깁니다.</li>
@@ -724,7 +729,7 @@
       </div>
       <div class="result">
         <h5>결과</h5>
-        <div class="big">웹 코드 거의 그대로<small>App Store 출시</small></div>
+        <div class="big">웹 코드 거의 그대로<small>그대로 App Store까지 나감</small></div>
         <ul class="dots"><li>웹에서 직접 보내는 메시지는 함수 하나뿐</li><li>브리지 규칙은 순수 함수 + 테스트</li></ul>
       </div>
     </div>
@@ -735,10 +740,10 @@
     <div class="case-body">
       <div>
         <ul class="dots">
-          <li>GitHub Actions가 2시간마다 네이버 엔터 랭킹 · 네이트판에서 화제를 모으고, 규칙과 위키데이터 인물 사전(해외 인지도)으로 채점합니다. 비용 때문에 AI 채점은 없앴습니다.</li>
+          <li>GitHub Actions가 2시간마다 네이버 엔터 랭킹, 네이트판에서 요즘 화제를 긁어 옵니다. 점수는 규칙이랑 위키데이터 인물 사전으로 매겨요. 처음엔 AI로 채점했는데 돈이 너무 들어서 뺐습니다.</li>
           <li>고른 주제는 Haiku 한 번 호출로 여러 언어 기사를 쓰고, 위키미디어 CC 사진을 붙여 발행합니다.</li>
           <li>언어별 hreflang · 용어 사전으로 검색 노출을 맞췄고, 일본어 기사는 구글 · 야후 재팬에서 꾸준히 유입됩니다.</li>
-          <li>매일 6시 지표 브리핑: 숫자는 스크립트가 모으고 에이전트는 해석만 합니다. 쿼리를 매번 새로 짜면 토큰도 들고 지표도 흔들리기 때문입니다.</li>
+          <li>매일 6시엔 어제 숫자가 브리핑으로 옵니다. 숫자는 스크립트가 모으고 에이전트는 해석만 해요. 쿼리를 매번 새로 짜게 두면 토큰도 들고 숫자가 날마다 미묘하게 달라지더라고요.</li>
         </ul>
       </div>
       <div class="result">
